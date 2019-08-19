@@ -1,0 +1,180 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1761681-1
+D Connector Header Through Hole 6 position 0.100" (2.54mm)
+K CONN HEADER VERT 6POS 2.54MM
+$ENDCMP
+#
+$CMP 1mH
+D 1mH Shielded Wirewound Inductor 500mA 2.016Ohm Max Nonstandard
+K FIXED IND 1MH 500MA 2.016 OHM
+F https://product.tdk.com/info/en/catalog/datasheets/inductor_automotive_power_slf12565-h_en.pdf
+$ENDCMP
+#
+$CMP 5104338-1
+D Connector Header Through Hole 10 position 0.100" (2.54mm)
+K CONN HEADER VERT 10POS 2.54MM
+$ENDCMP
+#
+$CMP 54602-908LF
+D CONN MOD JACK 8P8C R/A UNSHLD
+K 609-1046-ND 54602
+$ENDCMP
+#
+$CMP ATmega1284P-AU
+D 20MHz, 128kB Flash, 16kB SRAM, 4kB EEPROM, JTAG, TQFP-44
+K AVR 8bit Microcontroller MegaAVR PicoPower
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf
+$ENDCMP
+#
+$CMP BMX160
+D Accelerometer, Gyroscope, Magnetometer, 3 Axis Sensor I²C, SPI Output
+K IMU ACCEL/GYRO/MAG
+F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf
+$ENDCMP
+#
+$CMP L78L05_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L06_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 6V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L08_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 8V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L09_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 9V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L10_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 10V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L12_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 12V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L15_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 15V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L18_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 18V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L24_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 24V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP L78L33_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 3.3V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf
+$ENDCMP
+#
+$CMP LD2981
+D Positive 100mA Linear Regulator, 16V Input, Fixed Output 3.3V, SOT-89
+K Voltage Regulator 100mA Positive 3.3V
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/b7/b5/a1/83/9c/bd/4a/90/CD00001635/files/CD00001635.pdf/jcr:content/translations/en.CD00001635.pdf
+$ENDCMP
+#
+$CMP LP5996SD-3333_NOPB
+D Linear Voltage Regulator IC  2 Output  150mA, 300mA 10-SON (3x3)
+K IC REG LINEAR 3.3V 10SON
+F http://www.ti.com/lit/ds/symlink/lp5996.pdf
+$ENDCMP
+#
+$CMP LSM9DS1TR
+D IMU ACCEL/GYRO/MAG I2C/SPI 24LGA
+K 497-14946-1-ND
+F http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf
+$ENDCMP
+#
+$CMP MC78L08_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 8V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP MC78L12_SOT89
+D Positive 100mA 30V Linear Regulator, Fixed Output 12V, SOT-89
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP MCP1804x-1802xMB
+D 150mA, 28V LDO Regulator With Shutdown, 1.8V Fixed Output, SOT-89-3
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-2502xMB
+D 150mA, 28V LDO Regulator With Shutdown, 2.5V Fixed Output, SOT-89-3
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-3002xMB
+D 150mA, 28V LDO Regulator With Shutdown, 3.0V Fixed Output, SOT-89-3
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-3302xMB
+D 150mA, 28V LDO Regulator With Shutdown, 3.3V Fixed Output, SOT-89-3
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-5002xMB
+D 150mA, 28V LDO Regulator With Shutdown, 5.0V Fixed Output, SOT-89-3
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-A002xMB
+D 150mA, 28V LDO Regulator With Shutdown, 10.0V Fixed Output, SOT-89-3
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP MCP1804x-C002xMB
+D 150mA, 28V LDO Regulator With Shutdown, 12.0V Fixed Output, SOT-89-3
+K linear regulator ldo fixed positive
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf
+$ENDCMP
+#
+$CMP NX3225GD-8MHZ-STD-CRA-3
+D CRYSTAL 8.0000MHZ 8PF SMD
+K 644-1178-1-ND NX3225GD
+F http://www.ndk.com/images/products/catalog/c_NX3225GD-STD-CRA-3_e.pdf
+$ENDCMP
+#
+$CMP SN65HVD32DR
+D 1/1 Transceiver Full RS422, RS485 8-SOIC
+K IC DVR/RCVR RS-485 3.3V 8-SOIC
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn65hvd30
+$ENDCMP
+#
+#End Doc Library

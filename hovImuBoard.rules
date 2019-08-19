@@ -1,0 +1,115 @@
+
+(rules PCB hovImuBoard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 8387)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 150.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 37.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_500:250_um"
+    (shape
+      (circle F.Cu 500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_500:250_um" "Via[0-1]_500:250_um" default
+  )
+  (via 
+    "Via[0-1]_500:250_um-kicad_default" "Via[0-1]_500:250_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_500:250_um-PWR2Pad" "Via[0-1]_500:250_um" PWR2Pad
+  )
+  (via 
+    "Via[0-1]_500:250_um-Signal" "Via[0-1]_500:250_um" Signal
+  )
+  (via_rule
+    default "Via[0-1]_500:250_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_500:250_um-kicad_default"
+  )
+  (via_rule
+    PWR2Pad "Via[0-1]_500:250_um-PWR2Pad"
+  )
+  (via_rule
+    Signal "Via[0-1]_500:250_um-Signal"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +3V3 "Net-(C8-Pad2)" "Net-(C9-Pad2)" "Net-(C11-Pad2)" +12V "Net-(D1-Pad3)" "Net-(D1-Pad1)" "Net-(D2-Pad1)"
+    "Net-(D2-Pad3)" "Net-(D4-Pad1)" "Net-(D5-Pad1)" /RX+ /TX+ "/TX-" "/RX-" "Net-(JP17-Pad2)"
+    "Net-(JP19-Pad1)" "Net-(JP20-Pad1)" "Net-(L1-Pad1)" "/SIP_OK" "/SIP_ERR" "/I2C_OK" "/I2C_ERR"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class PWR2Pad
+    GND "/3.3V_IMU" +5V +VDC
+    (clearance_class PWR2Pad)
+    (via_rule PWR2Pad)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Signal
+    "/ISP_MISO" "/ISP_MOSI" "/ISP_SCK" "/MCU_RESET" "/JTAG_TCK" "/JTAG_TDO" "/JTAG_TMS" "/JTAG_TDI"
+    /IP15 /IP14 /IP13 /IP12 /IP11 /IP10 /IP9 /IP8
+    /IP7 /IP6 /IP5 /IP4 /IP3 /IP2 /IP1 /RX
+    /TX /SCL /SDA /IP0
+    (clearance_class Signal)
+    (via_rule Signal)
+    (rule
+      (width 150.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

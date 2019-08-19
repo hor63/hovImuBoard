@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\kai_horstmann\Documents\horOpenVario\hovImuBoard\hovImuBoard.sch</source>
+    <date>10.08.2019 13:48:40</date>
+    <tool>Eeschema (5.1.2)-2</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>hovImuBoard.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>54602-908LF</value>
+      <footprint>hovImuBoard:Ethernet_Jack_54602-908LF</footprint>
+      <fields>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="DK_Detail_Page">/product-detail/en/amphenol-icc-fci/54602-908LF/609-1046-ND/1001360</field>
+        <field name="Description">CONN MOD JACK 8P8C R/A UNSHLD</field>
+        <field name="Digi-Key_PN">609-1046-ND</field>
+        <field name="Family">Modular Connectors - Jacks</field>
+        <field name="MPN">54602-908LF</field>
+        <field name="Manufacturer">Amphenol ICC (FCI)</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="hovImuBoard" part="54602-908LF" description="CONN MOD JACK 8P8C R/A UNSHLD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4B7457</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B225KAFNFNE.jsp</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">1276-2953-1-ND</field>
+        <field name="MPN">CL21B225KAFNFNE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4C18CD</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B102KBANNNC.jsp</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">1276-1020-1-ND</field>
+        <field name="MPN">CL21B102KBANNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4D58F0</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KAFNFNE.jsp</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">1276-2926-1-ND</field>
+        <field name="MPN">CL21B105KAFNFNE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4CA5D6</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>68uF</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-6032-20_AVX-F</footprint>
+      <datasheet>http://datasheets.avx.com/TPM.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">478-3640-1-ND</field>
+        <field name="MPN">TPME686M025R0045</field>
+        <field name="Manufacturer">AVX Corporation</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4AAE9D</tstamp>
+    </comp>
+    <comp ref="XTAL1">
+      <value>8MHz</value>
+      <footprint>Crystal:Crystal_SMD_HC49-SD</footprint>
+      <datasheet>https://abracon.com/Resonators/ABLS2.pdf</datasheet>
+      <fields>
+        <field name="Category">Crystals, Oscillators, Resonators</field>
+        <field name="Description">8MHz ±30ppm Crystal 18pF 80 Ohms HC-49/US</field>
+        <field name="Digi-Key_PN">535-9864-1-ND</field>
+        <field name="Family">Crystals</field>
+        <field name="MPN">ABLS2-8.000MHZ-D4Y-T</field>
+        <field name="Manufacturer">Abracon LLC</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="hovImuBoard" part="NX3225GD-8MHZ-STD-CRA-3" description="CRYSTAL 8.0000MHZ 8PF SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4D9057</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LSM9DS1TR</value>
+      <footprint>hovImuBoard:LGA-24_3x3.5mm_LSM9DS1</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf</datasheet>
+      <fields>
+        <field name="Category">Sensors, Transducers</field>
+        <field name="DK_Datasheet_Link">http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/stmicroelectronics/LSM9DS1TR/497-14946-1-ND/4988079</field>
+        <field name="Description">IMU ACCEL/GYRO/MAG I2C/SPI 24LGA</field>
+        <field name="Digi-Key_PN">497-14946-1-ND</field>
+        <field name="Family">Motion Sensors - IMUs (Inertial Measurement Units)</field>
+        <field name="MPN">LSM9DS1TR</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="hovImuBoard" part="LSM9DS1TR" description="IMU ACCEL/GYRO/MAG I2C/SPI 24LGA"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4DA048</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>1761681-1</value>
+      <footprint>hovImuBoard:TE_1761681-1</footprint>
+      <fields>
+        <field name="Digi-Key_PN">A122759-ND</field>
+        <field name="MPN">1761681-1</field>
+        <field name="Manufacturer">TE Connectivity AMP Connectors</field>
+      </fields>
+      <libsource lib="hovImuBoard" part="1761681-1" description="Connector Header Through Hole 6 position 0.100&quot; (2.54mm)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4DBA91</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>5104338-1</value>
+      <footprint>hovImuBoard:TE_5104338-1</footprint>
+      <fields>
+        <field name="Digi-Key_PN">A33175-ND</field>
+        <field name="MPN">5104338-1</field>
+        <field name="Manufacturer">TE Connectivity AMP Connectors</field>
+      </fields>
+      <libsource lib="hovImuBoard" part="5104338-1" description="Connector Header Through Hole 10 position 0.100&quot; (2.54mm)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4DCD7B</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>ES1D</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/ES1D-D.PDF</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">ES1DFSCT-ND</field>
+        <field name="MPN">ES1D</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4ECF0A</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B105KAFNFNE.jsp</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">1276-2926-1-ND</field>
+        <field name="MPN">CL21B105KAFNFNE</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D5138E4</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>SN65HVD32DR</value>
+      <footprint>Package_SO:SO-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn65hvd30</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">296-19627-1-ND</field>
+        <field name="MPN">SN65HVD32DR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+      </fields>
+      <libsource lib="hovImuBoard" part="SN65HVD32DR" description="1/1 Transceiver Full RS422, RS485 8-SOIC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4D7F49</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>220nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B224KBFNNNG.jsp</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">1276-6478-1-ND</field>
+        <field name="MPN">CL21B224KBFNNNG</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D51B8C8</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>18pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21C180JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">1276-1107-1-ND</field>
+        <field name="MPN">CL21C180JBANNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D5248EF</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>18pF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21C180JBANNNC.jsp</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">1276-1107-1-ND</field>
+        <field name="MPN">CL21C180JBANNNC</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D527391</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>220nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B224KBFNNNG.jsp</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">1276-6478-1-ND</field>
+        <field name="MPN">CL21B224KBFNNNG</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D53D2C0</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/20035/dcrcwe3.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">541-10.0KCCT-ND</field>
+        <field name="MPN">CRCW080510K0FKEA</field>
+        <field name="Manufacturer">Vishay Dale</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D541168</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>ATmega1284P-AU</value>
+      <footprint>Package_QFP:TQFP-44_10x10mm_P0.8mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf</datasheet>
+      <fields>
+        <field name="Description">IC MCU 8BIT 128KB FLASH 44TQFP</field>
+        <field name="Digi-Key_PN">ATmega1284P-AU-ND</field>
+        <field name="MPN">ATmega1284P-AU</field>
+        <field name="Manufacturer">Microchip Technology</field>
+      </fields>
+      <libsource lib="hovImuBoard" part="ATmega1284P-AU" description="20MHz, 128kB Flash, 16kB SRAM, 4kB EEPROM, JTAG, TQFP-44"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4DD65E</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>150</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.seielect.com/catalog/sei-rncp.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key_PN">RNCP0805FTD150RCT-ND</field>
+        <field name="MPN">RNCP0805FTD150R</field>
+        <field name="Manufacturer">Stackpole Electronics Inc</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D54B233</tstamp>
+    </comp>
+    <comp ref="XTAL2">
+      <value>32.768kHz</value>
+      <footprint>Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</footprint>
+      <datasheet>https://abracon.com/Resonators/ABS07-120-32.768kHz-T.pdf</datasheet>
+      <fields>
+        <field name="Category">Crystals, Oscillators, Resonators</field>
+        <field name="Description">32.768kHz ±20ppm Crystal 6pF 55 kOhms 2-SMD, No Lead</field>
+        <field name="Digi-Key_PN">535-11937-1-ND</field>
+        <field name="Family">Crystals</field>
+        <field name="MPN">ABS07-120-32.768KHZ-T</field>
+        <field name="Manufacturer">Abracon LLC</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="hovImuBoard" part="NX3225GD-8MHZ-STD-CRA-3" description="CRYSTAL 8.0000MHZ 8PF SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D553AC8</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hovImuBoard" part="1761681-1">
+      <description>Connector Header Through Hole 6 position 0.100" (2.54mm)</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">1761681-1</field>
+        <field name="Footprint">hovImuBoard:TE_1761681-1</field>
+        <field name="Digi-Key_PN">A122759-ND</field>
+        <field name="MPN">1761681-1</field>
+        <field name="Manufacturer">TE Connectivity AMP Connectors</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hovImuBoard" part="5104338-1">
+      <description>Connector Header Through Hole 10 position 0.100" (2.54mm)</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">5104338-1</field>
+        <field name="Footprint">hovImuBoard:TE_5104338-1</field>
+        <field name="Digi-Key_PN">A33175-ND</field>
+        <field name="MPN">5104338-1</field>
+        <field name="Manufacturer">TE Connectivity AMP Connectors</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hovImuBoard" part="54602-908LF">
+      <description>CONN MOD JACK 8P8C R/A UNSHLD</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">54602-908LF</field>
+        <field name="Footprint">hovImuBoard:Ethernet_Jack_54602-908LF</field>
+        <field name="Digi-Key_PN">609-1046-ND</field>
+        <field name="MPN">54602-908LF</field>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="Family">Modular Connectors - Jacks</field>
+        <field name="DK_Detail_Page">/product-detail/en/amphenol-icc-fci/54602-908LF/609-1046-ND/1001360</field>
+        <field name="Description">CONN MOD JACK 8P8C R/A UNSHLD</field>
+        <field name="Manufacturer">Amphenol ICC (FCI)</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hovImuBoard" part="ATmega1284P-AU">
+      <description>20MHz, 128kB Flash, 16kB SRAM, 4kB EEPROM, JTAG, TQFP-44</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf</docs>
+      <footprints>
+        <fp>TQFP*10x10mm*P0.8mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATmega1284P-AU</field>
+        <field name="Footprint">Package_QFP:TQFP-44_10x10mm_P0.8mm</field>
+        <field name="Digi-Key_PN">ATmega1284P-AU-ND</field>
+        <field name="MPN">ATmega1284P-AU</field>
+        <field name="Description">IC MCU 8BIT 128KB FLASH 44TQFP</field>
+        <field name="Manufacturer">Microchip Technology</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB5" type="3state"/>
+        <pin num="2" name="PB6" type="3state"/>
+        <pin num="3" name="PB7" type="3state"/>
+        <pin num="4" name="~RESET" type="input"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="XTAL2" type="output"/>
+        <pin num="8" name="XTAL1" type="input"/>
+        <pin num="9" name="PD0" type="3state"/>
+        <pin num="10" name="PD1" type="3state"/>
+        <pin num="11" name="PD2" type="3state"/>
+        <pin num="12" name="PD3" type="3state"/>
+        <pin num="13" name="PD4" type="3state"/>
+        <pin num="14" name="PD5" type="3state"/>
+        <pin num="15" name="PD6" type="3state"/>
+        <pin num="16" name="PD7" type="3state"/>
+        <pin num="17" name="VCC" type="passive"/>
+        <pin num="18" name="GND" type="passive"/>
+        <pin num="19" name="PC0" type="3state"/>
+        <pin num="20" name="PC1" type="3state"/>
+        <pin num="21" name="PC2" type="3state"/>
+        <pin num="22" name="PC3" type="3state"/>
+        <pin num="23" name="PC4" type="3state"/>
+        <pin num="24" name="PC5" type="3state"/>
+        <pin num="25" name="PC6" type="3state"/>
+        <pin num="26" name="PC7" type="3state"/>
+        <pin num="27" name="AVCC" type="power_in"/>
+        <pin num="28" name="GND" type="passive"/>
+        <pin num="29" name="AREF" type="passive"/>
+        <pin num="30" name="PA7" type="3state"/>
+        <pin num="31" name="PA6" type="3state"/>
+        <pin num="32" name="PA5" type="3state"/>
+        <pin num="33" name="PA4" type="3state"/>
+        <pin num="34" name="PA3" type="3state"/>
+        <pin num="35" name="PA2" type="3state"/>
+        <pin num="36" name="PA1" type="3state"/>
+        <pin num="37" name="PA0" type="3state"/>
+        <pin num="38" name="VCC" type="passive"/>
+        <pin num="39" name="GND" type="passive"/>
+        <pin num="40" name="PB0" type="3state"/>
+        <pin num="41" name="PB1" type="3state"/>
+        <pin num="42" name="PB2" type="3state"/>
+        <pin num="43" name="PB3" type="3state"/>
+        <pin num="44" name="PB4" type="3state"/>
+      </pins>
+    </libpart>
+    <libpart lib="hovImuBoard" part="LSM9DS1TR">
+      <description>IMU ACCEL/GYRO/MAG I2C/SPI 24LGA</description>
+      <docs>http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LSM9DS1TR</field>
+        <field name="Footprint">hovImuBoard:LGA-24_3x3.5mm_LSM9DS1</field>
+        <field name="Digi-Key_PN">497-14946-1-ND</field>
+        <field name="MPN">LSM9DS1TR</field>
+        <field name="Category">Sensors, Transducers</field>
+        <field name="Family">Motion Sensors - IMUs (Inertial Measurement Units)</field>
+        <field name="DK_Datasheet_Link">http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/stmicroelectronics/LSM9DS1TR/497-14946-1-ND/4988079</field>
+        <field name="Description">IMU ACCEL/GYRO/MAG I2C/SPI 24LGA</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDDIO" type="power_in"/>
+        <pin num="2" name="SCL/SPC" type="input"/>
+        <pin num="3" name="VDDIO" type="power_in"/>
+        <pin num="4" name="SDA/SDI/SDO" type="BiDi"/>
+        <pin num="5" name="SDO_A/G" type="output"/>
+        <pin num="6" name="SDO_A/G" type="output"/>
+        <pin num="7" name="CS_A/G" type="input"/>
+        <pin num="8" name="CS_M" type="input"/>
+        <pin num="9" name="DRDY_M" type="output"/>
+        <pin num="10" name="INT_M" type="output"/>
+        <pin num="11" name="INT1_A/G" type="output"/>
+        <pin num="12" name="INT2_A/G" type="output"/>
+        <pin num="13" name="DEN_A/G" type="input"/>
+        <pin num="14" name="RES" type="power_in"/>
+        <pin num="15" name="RES" type="power_in"/>
+        <pin num="16" name="RES" type="power_in"/>
+        <pin num="17" name="RES" type="power_in"/>
+        <pin num="18" name="RES" type="power_in"/>
+        <pin num="19" name="GND" type="power_in"/>
+        <pin num="20" name="GND" type="power_in"/>
+        <pin num="21" name="CAP" type="unspc"/>
+        <pin num="22" name="VDD" type="power_in"/>
+        <pin num="23" name="VDD" type="power_in"/>
+        <pin num="24" name="C1" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="hovImuBoard" part="NX3225GD-8MHZ-STD-CRA-3">
+      <description>CRYSTAL 8.0000MHZ 8PF SMD</description>
+      <docs>http://www.ndk.com/images/products/catalog/c_NX3225GD-STD-CRA-3_e.pdf</docs>
+      <fields>
+        <field name="Reference">XTAL</field>
+        <field name="Value">NX3225GD-8MHZ-STD-CRA-3</field>
+        <field name="Footprint">hovImuBoard:SMD-2_3.2x2.5mm</field>
+        <field name="Digi-Key_PN">644-1178-1-ND</field>
+        <field name="MPN">NX3225GD-8MHZ-STD-CRA-3</field>
+        <field name="Category">Crystals, Oscillators, Resonators</field>
+        <field name="Family">Crystals</field>
+        <field name="DK_Datasheet_Link">http://www.ndk.com/images/products/catalog/c_NX3225GD-STD-CRA-3_e.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/ndk-america-inc/NX3225GD-8MHZ-STD-CRA-3/644-1178-1-ND/3125567</field>
+        <field name="Description">CRYSTAL 8.0000MHZ 8PF SMD</field>
+        <field name="Manufacturer">NDK America, Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="hovImuBoard" part="SN65HVD32DR">
+      <description>1/1 Transceiver Full RS422, RS485 8-SOIC</description>
+      <docs>http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn65hvd30</docs>
+      <footprints>
+        <fp>D8</fp>
+        <fp>D8-M</fp>
+        <fp>D8-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN65HVD32DR</field>
+        <field name="Footprint">Package_SO:SO-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Digi-Key_PN">296-19627-1-ND</field>
+        <field name="MPN">SN65HVD32DR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="R" type="input"/>
+        <pin num="3" name="D" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Y" type="output"/>
+        <pin num="6" name="Z" type="output"/>
+        <pin num="7" name="B" type="output"/>
+        <pin num="8" name="A" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="hovImuBoard">
+      <uri>C:\Users\kai_horstmann\Documents\horOpenVario\hovImuBoard/lib/hovImuBoard.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U4-Pad11)">
+      <node ref="U4" pin="11"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="U3" pin="4"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="J1" pin="8"/>
+      <node ref="J1" pin="2"/>
+      <node ref="U4" pin="39"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U4" pin="28"/>
+      <node ref="U4" pin="6"/>
+      <node ref="U4" pin="18"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="3" name="/+3.3V-MCU">
+      <node ref="U4" pin="5"/>
+      <node ref="U4" pin="27"/>
+      <node ref="U4" pin="38"/>
+      <node ref="U4" pin="17"/>
+      <node ref="C7" pin="2"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="4" name="Net-(R2-Pad2)">
+      <node ref="U4" pin="4"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="5" name="Net-(U4-Pad1)">
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="6" name="/TX">
+      <node ref="U3" pin="3"/>
+      <node ref="U4" pin="10"/>
+    </net>
+    <net code="7" name="Net-(U4-Pad12)">
+      <node ref="U4" pin="12"/>
+    </net>
+    <net code="8" name="Net-(U4-Pad13)">
+      <node ref="U4" pin="13"/>
+    </net>
+    <net code="9" name="Net-(U4-Pad14)">
+      <node ref="U4" pin="14"/>
+    </net>
+    <net code="10" name="Net-(U4-Pad15)">
+      <node ref="U4" pin="15"/>
+    </net>
+    <net code="11" name="Net-(U4-Pad16)">
+      <node ref="U4" pin="16"/>
+    </net>
+    <net code="12" name="/SCL">
+      <node ref="U4" pin="19"/>
+    </net>
+    <net code="13" name="Net-(U4-Pad2)">
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="14" name="/SDA">
+      <node ref="U4" pin="20"/>
+    </net>
+    <net code="15" name="Net-(U4-Pad21)">
+      <node ref="U4" pin="21"/>
+    </net>
+    <net code="16" name="Net-(U4-Pad22)">
+      <node ref="U4" pin="22"/>
+    </net>
+    <net code="17" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2"/>
+    </net>
+    <net code="18" name="/+3.3V-IFC">
+      <node ref="U3" pin="1"/>
+      <node ref="C5" pin="2"/>
+    </net>
+    <net code="19" name="Net-(U4-Pad23)">
+      <node ref="U4" pin="23"/>
+    </net>
+    <net code="20" name="Net-(C8-Pad2)">
+      <node ref="U4" pin="7"/>
+      <node ref="XTAL1" pin="1"/>
+      <node ref="C8" pin="2"/>
+    </net>
+    <net code="21" name="/RX">
+      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="9"/>
+    </net>
+    <net code="22" name="Net-(U4-Pad25)">
+      <node ref="XTAL2" pin="1"/>
+      <node ref="U4" pin="25"/>
+    </net>
+    <net code="23" name="Net-(U4-Pad26)">
+      <node ref="U4" pin="26"/>
+      <node ref="XTAL2" pin="2"/>
+    </net>
+    <net code="24" name="Net-(U4-Pad36)">
+      <node ref="U4" pin="36"/>
+    </net>
+    <net code="25" name="Net-(U4-Pad24)">
+      <node ref="U4" pin="24"/>
+    </net>
+    <net code="26" name="Net-(U4-Pad29)">
+      <node ref="U4" pin="29"/>
+    </net>
+    <net code="27" name="Net-(U4-Pad3)">
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="28" name="Net-(U4-Pad30)">
+      <node ref="U4" pin="30"/>
+    </net>
+    <net code="29" name="Net-(U4-Pad31)">
+      <node ref="U4" pin="31"/>
+    </net>
+    <net code="30" name="Net-(U4-Pad32)">
+      <node ref="U4" pin="32"/>
+    </net>
+    <net code="31" name="Net-(U4-Pad33)">
+      <node ref="U4" pin="33"/>
+    </net>
+    <net code="32" name="Net-(U4-Pad34)">
+      <node ref="U4" pin="34"/>
+    </net>
+    <net code="33" name="Net-(U4-Pad35)">
+      <node ref="U4" pin="35"/>
+    </net>
+    <net code="34" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="35" name="Net-(U4-Pad37)">
+      <node ref="U4" pin="37"/>
+    </net>
+    <net code="36" name="Net-(U4-Pad40)">
+      <node ref="U4" pin="40"/>
+    </net>
+    <net code="37" name="Net-(U4-Pad41)">
+      <node ref="U4" pin="41"/>
+    </net>
+    <net code="38" name="Net-(U4-Pad42)">
+      <node ref="U4" pin="42"/>
+    </net>
+    <net code="39" name="Net-(U4-Pad43)">
+      <node ref="U4" pin="43"/>
+    </net>
+    <net code="40" name="Net-(U4-Pad44)">
+      <node ref="U4" pin="44"/>
+    </net>
+    <net code="41" name="+5V">
+      <node ref="C1" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="42" name="Net-(C9-Pad2)">
+      <node ref="C9" pin="2"/>
+      <node ref="U4" pin="8"/>
+      <node ref="XTAL1" pin="2"/>
+    </net>
+    <net code="43" name="Net-(U5-Pad1)">
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="44" name="Net-(U5-Pad10)">
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="45" name="Net-(U5-Pad11)">
+      <node ref="U5" pin="11"/>
+    </net>
+    <net code="46" name="Net-(U5-Pad12)">
+      <node ref="U5" pin="12"/>
+    </net>
+    <net code="47" name="Net-(U5-Pad13)">
+      <node ref="U5" pin="13"/>
+    </net>
+    <net code="48" name="Net-(U5-Pad14)">
+      <node ref="U5" pin="14"/>
+    </net>
+    <net code="49" name="Net-(U5-Pad15)">
+      <node ref="U5" pin="15"/>
+    </net>
+    <net code="50" name="Net-(U5-Pad16)">
+      <node ref="U5" pin="16"/>
+    </net>
+    <net code="51" name="Net-(U5-Pad17)">
+      <node ref="U5" pin="17"/>
+    </net>
+    <net code="52" name="Net-(U5-Pad18)">
+      <node ref="U5" pin="18"/>
+    </net>
+    <net code="53" name="Net-(U5-Pad19)">
+      <node ref="U5" pin="19"/>
+    </net>
+    <net code="54" name="/RX+">
+      <node ref="R1" pin="1"/>
+      <node ref="U3" pin="8"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="55" name="/TX+">
+      <node ref="J1" pin="4"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="56" name="/TX-">
+      <node ref="U3" pin="6"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="57" name="/RX-">
+      <node ref="U3" pin="7"/>
+      <node ref="R1" pin="2"/>
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="58" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="59" name="Net-(U5-Pad2)">
+      <node ref="U5" pin="2"/>
+    </net>
+    <net code="61" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="62" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2"/>
+    </net>
+    <net code="63" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1"/>
+    </net>
+    <net code="64" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2"/>
+    </net>
+    <net code="65" name="Net-(J3-Pad9)">
+      <node ref="J3" pin="9"/>
+    </net>
+    <net code="66" name="Net-(J3-Pad8)">
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="67" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="68" name="Net-(U5-Pad20)">
+      <node ref="U5" pin="20"/>
+    </net>
+    <net code="69" name="Net-(U5-Pad21)">
+      <node ref="U5" pin="21"/>
+    </net>
+    <net code="70" name="Net-(U5-Pad22)">
+      <node ref="U5" pin="22"/>
+    </net>
+    <net code="71" name="Net-(U5-Pad23)">
+      <node ref="U5" pin="23"/>
+    </net>
+    <net code="72" name="Net-(U5-Pad24)">
+      <node ref="U5" pin="24"/>
+    </net>
+    <net code="73" name="Net-(U5-Pad3)">
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="74" name="Net-(U5-Pad4)">
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="75" name="Net-(U5-Pad5)">
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="76" name="Net-(U5-Pad6)">
+      <node ref="U5" pin="6"/>
+    </net>
+    <net code="77" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="78" name="Net-(U5-Pad8)">
+      <node ref="U5" pin="8"/>
+    </net>
+    <net code="79" name="Net-(U5-Pad9)">
+      <node ref="U5" pin="9"/>
+    </net>
+    <net code="80" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="81" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="82" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="83" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="84" name="Net-(J2-Pad6)">
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="85" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="86" name="Net-(J3-Pad10)">
+      <node ref="J3" pin="10"/>
+    </net>
+    <net code="87" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="88" name="Net-(J3-Pad3)">
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="89" name="Net-(J3-Pad4)">
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="90" name="Net-(J3-Pad5)">
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="91" name="Net-(J3-Pad6)">
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="92" name="Net-(J3-Pad7)">
+      <node ref="J3" pin="7"/>
+    </net>
+  </nets>
+</export>
