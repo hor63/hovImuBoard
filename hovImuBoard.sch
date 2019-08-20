@@ -858,7 +858,7 @@ L power:+3.3V #PWR02
 U 1 1 5D6A0339
 P 8000 1050
 F 0 "#PWR02" H 8000 900 50  0001 C CNN
-F 1 "+3.3V" H 8015 1223 50  0000 C CNN
+F 1 "+3.3V" H 8000 1200 50  0000 C CNN
 F 2 "" H 8000 1050 50  0001 C CNN
 F 3 "" H 8000 1050 50  0001 C CNN
 	1    8000 1050
@@ -868,8 +868,8 @@ $Comp
 L hovImuBoard:BMX160 U2
 U 1 1 5D514A45
 P 8500 1450
-F 0 "U2" H 8550 2031 50  0000 C CNN
-F 1 "BMX160" H 8550 1940 50  0000 C CNN
+F 0 "U2" H 8550 2000 50  0000 C CNN
+F 1 "BMX160" H 8550 1900 50  0000 C CNN
 F 2 "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm" H 8700 2750 60  0001 L CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf" H 8700 1750 60  0001 L CNN
 F 4 "828-1087-1-ND" H 8700 1850 60  0001 L CNN "Digi-Key_PN"
@@ -1214,153 +1214,10 @@ Wire Wire Line
 	6800 3850 7350 3850
 Wire Wire Line
 	6800 3950 7350 3950
-Entry Wire Line
-	7150 2850 7250 2950
-Entry Wire Line
-	7150 2950 7250 3050
-Entry Wire Line
-	7150 3050 7250 3150
-Entry Wire Line
-	7150 3150 7250 3250
-Entry Wire Line
-	7150 3250 7250 3350
-Entry Wire Line
-	7150 3350 7250 3450
-Entry Wire Line
-	7150 3450 7250 3550
-Entry Wire Line
-	7150 3550 7250 3650
 Wire Wire Line
 	7700 3600 7800 3600
 Wire Wire Line
 	7350 3600 7400 3600
-Entry Wire Line
-	7150 5250 7250 5350
-Entry Wire Line
-	7150 5350 7250 5450
-Entry Wire Line
-	7150 5750 7250 5850
-Entry Wire Line
-	7150 5850 7250 5950
-Entry Wire Line
-	7150 5950 7250 6050
-Entry Wire Line
-	7150 6050 7250 6150
-Entry Wire Line
-	7150 6150 7250 6250
-Entry Wire Line
-	7150 6250 7250 6350
-Wire Wire Line
-	6800 5250 7150 5250
-Wire Wire Line
-	6800 5350 7150 5350
-Wire Wire Line
-	6800 5750 7150 5750
-Wire Wire Line
-	6800 5850 7150 5850
-Wire Wire Line
-	6800 5950 7150 5950
-Wire Wire Line
-	6800 6050 7150 6050
-Wire Wire Line
-	6800 6150 7150 6150
-Wire Wire Line
-	6800 6250 7150 6250
-Wire Wire Line
-	6800 2850 7150 2850
-Wire Wire Line
-	6800 2950 7150 2950
-Wire Wire Line
-	6800 3050 7150 3050
-Wire Wire Line
-	6800 3150 7150 3150
-Wire Wire Line
-	6800 3250 7150 3250
-Wire Wire Line
-	6800 3350 7150 3350
-Wire Wire Line
-	6800 3450 7150 3450
-Wire Wire Line
-	6800 3550 7150 3550
-Text Label 6850 2850 0    50   ~ 0
-IP0
-Text Label 6850 2950 0    50   ~ 0
-IP1
-Text Label 6850 3050 0    50   ~ 0
-IP2
-Text Label 6850 3150 0    50   ~ 0
-IP3
-Text Label 6850 3250 0    50   ~ 0
-IP4
-Text Label 6850 3350 0    50   ~ 0
-IP5
-Text Label 6850 3450 0    50   ~ 0
-IP6
-Text Label 6850 3550 0    50   ~ 0
-IP7
-Text Label 6850 6050 0    50   ~ 0
-IP13
-Text Label 6850 6150 0    50   ~ 0
-IP14
-Text Label 6850 6250 0    50   ~ 0
-IP15
-Text Label 6850 5950 0    50   ~ 0
-IP12
-Text Label 6850 5850 0    50   ~ 0
-IP11
-Text Label 6850 5750 0    50   ~ 0
-IP10
-Text Label 6850 5350 0    50   ~ 0
-IP9
-Text Label 6850 5250 0    50   ~ 0
-IP8
-Text Label 4550 1550 3    50   ~ 0
-IP0
-Text Label 4450 1550 3    50   ~ 0
-IP1
-Text Label 4350 1550 3    50   ~ 0
-IP2
-Text Label 4250 1550 3    50   ~ 0
-IP3
-Text Label 4150 1550 3    50   ~ 0
-IP4
-Text Label 4050 1550 3    50   ~ 0
-IP5
-Text Label 3950 1550 3    50   ~ 0
-IP6
-Text Label 3700 1550 3    50   ~ 0
-IP8
-Text Label 3600 1550 3    50   ~ 0
-IP9
-Text Label 3500 1550 3    50   ~ 0
-IP10
-Text Label 3400 1550 3    50   ~ 0
-IP11
-Text Label 3300 1550 3    50   ~ 0
-IP12
-Text Label 3200 1550 3    50   ~ 0
-IP13
-Text Label 3100 1550 3    50   ~ 0
-IP14
-Text Label 3000 1550 3    50   ~ 0
-IP15
-Wire Wire Line
-	2850 1100 2850 1150
-Wire Wire Line
-	3000 1150 3000 1100
-Wire Wire Line
-	3000 1100 2850 1100
-$Comp
-L power:GND #PWR03
-U 1 1 5D5ABDAE
-P 2850 1150
-F 0 "#PWR03" H 2850 900 50  0001 C CNN
-F 1 "GND" H 2855 977 50  0000 C CNN
-F 2 "" H 2850 1150 50  0001 C CNN
-F 3 "" H 2850 1150 50  0001 C CNN
-	1    2850 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 2850 4900 2850
 Connection ~ 5400 2850
@@ -1482,8 +1339,6 @@ Wire Wire Line
 Connection ~ 4400 3750
 Wire Wire Line
 	4550 3750 4400 3750
-Text Label 3850 1550 3    50   ~ 0
-IP7
 Connection ~ 4250 3750
 Wire Wire Line
 	4250 3750 4400 3750
@@ -1624,276 +1479,6 @@ F 3 "" H 7750 4650 50  0001 C CNN
 $EndComp
 Connection ~ 7750 4650
 $Comp
-L power:+3.3V #PWR01
-U 1 1 5D5D7D49
-P 4850 950
-F 0 "#PWR01" H 4850 800 50  0001 C CNN
-F 1 "+3.3V" H 4865 1123 50  0000 C CNN
-F 2 "" H 4850 950 50  0001 C CNN
-F 3 "" H 4850 950 50  0001 C CNN
-	1    4850 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP16
-U 1 1 5D5D950F
-P 6600 1150
-F 0 "JP16" V 6554 1218 50  0001 L CNN
-F 1 "J0" H 6750 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6600 1150 50  0001 C CNN
-F 3 "~" H 6600 1150 50  0001 C CNN
-	1    6600 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP15
-U 1 1 5D5E269B
-P 6500 1150
-F 0 "JP15" V 6454 1218 50  0001 L CNN
-F 1 "J1" H 6650 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 6500 1150 50  0001 C CNN
-F 3 "~" H 6500 1150 50  0001 C CNN
-	1    6500 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP14
-U 1 1 5D5E28AA
-P 6400 1150
-F 0 "JP14" V 6354 1218 50  0001 L CNN
-F 1 "J2" H 6550 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6400 1150 50  0001 C CNN
-F 3 "~" H 6400 1150 50  0001 C CNN
-	1    6400 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP13
-U 1 1 5D5E2B2B
-P 6300 1150
-F 0 "JP13" V 6254 1218 50  0001 L CNN
-F 1 "J3" H 6450 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6300 1150 50  0001 C CNN
-F 3 "~" H 6300 1150 50  0001 C CNN
-	1    6300 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP11
-U 1 1 5D5E2EFB
-P 6100 1150
-F 0 "JP11" V 6054 1218 50  0001 L CNN
-F 1 "J5" H 6250 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6100 1150 50  0001 C CNN
-F 3 "~" H 6100 1150 50  0001 C CNN
-	1    6100 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP9
-U 1 1 5D5E330E
-P 5900 1150
-F 0 "JP9" V 5854 1218 50  0001 L CNN
-F 1 "J7" H 6050 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5900 1150 50  0001 C CNN
-F 3 "~" H 5900 1150 50  0001 C CNN
-	1    5900 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP8
-U 1 1 5D5E34E4
-P 5700 1150
-F 0 "JP8" V 5654 1218 50  0001 L CNN
-F 1 "J8" H 5850 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5700 1150 50  0001 C CNN
-F 3 "~" H 5700 1150 50  0001 C CNN
-	1    5700 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP7
-U 1 1 5D5E364E
-P 5600 1150
-F 0 "JP7" V 5554 1218 50  0001 L CNN
-F 1 "J9" H 5750 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5600 1150 50  0001 C CNN
-F 3 "~" H 5600 1150 50  0001 C CNN
-	1    5600 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP6
-U 1 1 5D5E3814
-P 5500 1150
-F 0 "JP6" V 5454 1218 50  0001 L CNN
-F 1 "J10" H 5650 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5500 1150 50  0001 C CNN
-F 3 "~" H 5500 1150 50  0001 C CNN
-	1    5500 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP5
-U 1 1 5D5E39AC
-P 5400 1150
-F 0 "JP5" V 5354 1218 50  0001 L CNN
-F 1 "J11" H 5550 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5400 1150 50  0001 C CNN
-F 3 "~" H 5400 1150 50  0001 C CNN
-	1    5400 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5D5E3B2A
-P 5300 1150
-F 0 "JP4" V 5254 1218 50  0001 L CNN
-F 1 "J12" H 5450 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5300 1150 50  0001 C CNN
-F 3 "~" H 5300 1150 50  0001 C CNN
-	1    5300 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5D5E3B92
-P 5200 1150
-F 0 "JP3" V 5154 1218 50  0001 L CNN
-F 1 "J13" H 5350 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5200 1150 50  0001 C CNN
-F 3 "~" H 5200 1150 50  0001 C CNN
-	1    5200 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 5D5E3E65
-P 5100 1150
-F 0 "JP2" V 5054 1218 50  0001 L CNN
-F 1 "J14" H 5250 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5100 1150 50  0001 C CNN
-F 3 "~" H 5100 1150 50  0001 C CNN
-	1    5100 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5D5E4157
-P 5000 1150
-F 0 "JP1" V 4954 1218 50  0001 L CNN
-F 1 "J15" H 5150 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 5000 1150 50  0001 C CNN
-F 3 "~" H 5000 1150 50  0001 C CNN
-	1    5000 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP12
-U 1 1 5D5E2D11
-P 6200 1150
-F 0 "JP12" V 6154 1218 50  0001 L CNN
-F 1 "J4" H 6350 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6200 1150 50  0001 C CNN
-F 3 "~" H 6200 1150 50  0001 C CNN
-	1    6200 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP10
-U 1 1 5D5E30FB
-P 6000 1150
-F 0 "JP10" V 5954 1218 50  0001 L CNN
-F 1 "J6" H 6150 1100 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6000 1150 50  0001 C CNN
-F 3 "~" H 6000 1150 50  0001 C CNN
-	1    6000 1150
-	0    1    1    0   
-$EndComp
-Text Notes 5900 950  0    50   ~ 0
-2
-Text Label 6600 1450 3    50   ~ 0
-IP0
-Text Label 6500 1450 3    50   ~ 0
-IP1
-Text Label 6400 1450 3    50   ~ 0
-IP2
-Text Label 6300 1450 3    50   ~ 0
-IP3
-Text Label 6200 1450 3    50   ~ 0
-IP4
-Text Label 6100 1450 3    50   ~ 0
-IP5
-Text Label 6000 1450 3    50   ~ 0
-IP6
-Text Label 5900 1450 3    50   ~ 0
-IP7
-Text Label 5700 1450 3    50   ~ 0
-IP8
-Text Label 5600 1450 3    50   ~ 0
-IP9
-Text Label 5500 1450 3    50   ~ 0
-IP10
-Text Label 5400 1450 3    50   ~ 0
-IP11
-Text Label 5300 1450 3    50   ~ 0
-IP12
-Text Label 5200 1450 3    50   ~ 0
-IP13
-Text Label 5100 1450 3    50   ~ 0
-IP14
-Text Label 5000 1450 3    50   ~ 0
-IP15
-Wire Wire Line
-	6600 1000 6500 1000
-Wire Wire Line
-	4850 1000 4850 950 
-Connection ~ 5000 1000
-Wire Wire Line
-	5000 1000 4850 1000
-Connection ~ 5100 1000
-Wire Wire Line
-	5100 1000 5000 1000
-Connection ~ 5200 1000
-Wire Wire Line
-	5200 1000 5100 1000
-Connection ~ 5300 1000
-Wire Wire Line
-	5300 1000 5200 1000
-Connection ~ 5400 1000
-Wire Wire Line
-	5400 1000 5300 1000
-Connection ~ 5500 1000
-Wire Wire Line
-	5500 1000 5400 1000
-Connection ~ 5600 1000
-Wire Wire Line
-	5600 1000 5500 1000
-Connection ~ 5700 1000
-Wire Wire Line
-	5700 1000 5600 1000
-Connection ~ 5900 1000
-Wire Wire Line
-	5900 1000 5700 1000
-Connection ~ 6000 1000
-Wire Wire Line
-	6000 1000 5900 1000
-Connection ~ 6100 1000
-Wire Wire Line
-	6100 1000 6000 1000
-Connection ~ 6200 1000
-Wire Wire Line
-	6200 1000 6100 1000
-Connection ~ 6300 1000
-Wire Wire Line
-	6300 1000 6200 1000
-Connection ~ 6400 1000
-Wire Wire Line
-	6400 1000 6300 1000
-Connection ~ 6500 1000
-Wire Wire Line
-	6500 1000 6400 1000
-$Comp
 L Connector:Conn_01x06_Male J5
 U 1 1 5D5FF7DF
 P 9400 5950
@@ -1925,134 +1510,6 @@ Wire Wire Line
 	9600 5850 9950 5850
 Wire Wire Line
 	9600 5950 10100 5950
-Wire Wire Line
-	6600 1300 6600 1750
-Wire Wire Line
-	6500 1300 6500 1750
-Wire Wire Line
-	6400 1300 6400 1750
-Wire Wire Line
-	6300 1300 6300 1750
-Wire Wire Line
-	6200 1300 6200 1750
-Wire Wire Line
-	6100 1300 6100 1750
-Wire Wire Line
-	6000 1300 6000 1750
-Wire Wire Line
-	5900 1300 5900 1750
-Wire Wire Line
-	5700 1300 5700 1750
-Wire Wire Line
-	5600 1300 5600 1750
-Wire Wire Line
-	5500 1300 5500 1750
-Wire Wire Line
-	5400 1300 5400 1750
-Wire Wire Line
-	5300 1300 5300 1750
-Wire Wire Line
-	5200 1300 5200 1750
-Wire Wire Line
-	5100 1300 5100 1750
-Wire Wire Line
-	5000 1300 5000 1750
-Wire Wire Line
-	4550 1550 4550 1750
-Wire Wire Line
-	4450 1550 4450 1750
-Wire Wire Line
-	4350 1550 4350 1750
-Wire Wire Line
-	4250 1550 4250 1750
-Wire Wire Line
-	4150 1550 4150 1750
-Wire Wire Line
-	4050 1550 4050 1750
-Wire Wire Line
-	3950 1550 3950 1750
-Wire Wire Line
-	3850 1550 3850 1750
-Wire Wire Line
-	3700 1550 3700 1750
-Wire Wire Line
-	3600 1550 3600 1750
-Wire Wire Line
-	3500 1550 3500 1750
-Wire Wire Line
-	3400 1550 3400 1750
-Wire Wire Line
-	3300 1550 3300 1750
-Wire Wire Line
-	3200 1550 3200 1750
-Wire Wire Line
-	3100 1550 3100 1750
-Wire Wire Line
-	3000 1550 3000 1750
-Entry Wire Line
-	6600 1750 6700 1850
-Entry Wire Line
-	6500 1750 6600 1850
-Entry Wire Line
-	6400 1750 6500 1850
-Entry Wire Line
-	6300 1750 6400 1850
-Entry Wire Line
-	6200 1750 6300 1850
-Entry Wire Line
-	6100 1750 6200 1850
-Entry Wire Line
-	6000 1750 6100 1850
-Entry Wire Line
-	5900 1750 6000 1850
-Entry Wire Line
-	5700 1750 5800 1850
-Entry Wire Line
-	5600 1750 5700 1850
-Entry Wire Line
-	5500 1750 5600 1850
-Entry Wire Line
-	5400 1750 5500 1850
-Entry Wire Line
-	5300 1750 5400 1850
-Entry Wire Line
-	5200 1750 5300 1850
-Entry Wire Line
-	5100 1750 5200 1850
-Entry Wire Line
-	5000 1750 5100 1850
-Entry Wire Line
-	4550 1750 4650 1850
-Entry Wire Line
-	4450 1750 4550 1850
-Entry Wire Line
-	4350 1750 4450 1850
-Entry Wire Line
-	4250 1750 4350 1850
-Entry Wire Line
-	4150 1750 4250 1850
-Entry Wire Line
-	4050 1750 4150 1850
-Entry Wire Line
-	3950 1750 4050 1850
-Entry Wire Line
-	3850 1750 3950 1850
-Entry Wire Line
-	3700 1750 3800 1850
-Entry Wire Line
-	3600 1750 3700 1850
-Entry Wire Line
-	3500 1750 3600 1850
-Entry Wire Line
-	3400 1750 3500 1850
-Entry Wire Line
-	3300 1750 3400 1850
-Entry Wire Line
-	3200 1750 3300 1850
-Entry Wire Line
-	3100 1750 3200 1850
-Entry Wire Line
-	3000 1750 3100 1850
 Wire Notes Line
 	1200 2000 3950 2000
 Wire Notes Line
@@ -2063,16 +1520,6 @@ Wire Notes Line
 	1200 3000 1200 2000
 Text Notes 2350 3100 0    50   ~ 0
 RS-422 transceiver
-Wire Notes Line
-	2700 700  6750 700 
-Wire Notes Line
-	6750 700  6750 1900
-Wire Notes Line
-	6750 1900 2700 1900
-Wire Notes Line
-	2700 1900 2700 700 
-Text Notes 4800 650  0    50   ~ 0
-Local IP Address encoding. Default 192.168.203.2
 $Comp
 L Jumper:SolderJumper_2_Open JP17
 U 1 1 5D83E0B0
@@ -2191,45 +1638,6 @@ Wire Notes Line
 	9200 6500 9200 5450
 Text Notes 8500 5400 0    50   ~ 0
 I2C expansion header with 12V, 5V, 3.3V power.\nI2C requires 3.3V level. Pull-Up resistors are present on the board.
-Connection ~ 3000 1100
-Wire Wire Line
-	3850 1100 3000 1100
-Wire Wire Line
-	3850 1150 3850 1100
-$Comp
-L Device:R_Network08 RN1
-U 1 1 5D577AB5
-P 3400 1350
-F 0 "RN1" H 3550 1550 50  0000 L CNN
-F 1 "470K x 8" H 3100 1550 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 3875 1350 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3400 1350 50  0001 C CNN
-F 4 "4609X-101-474LF-ND" H 3400 1350 50  0001 C CNN "Digi-Key_PN"
-F 5 "4609X-101-474LF" H 3400 1350 50  0001 C CNN "MPN"
-F 6 "Bourns Inc." H 3400 1350 50  0001 C CNN "Manufacturer"
-	1    3400 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Network08 RN2
-U 1 1 5D55BCAE
-P 4250 1350
-F 0 "RN2" H 4400 1550 50  0000 L CNN
-F 1 "470K x 8" H 3950 1550 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 4725 1350 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4250 1350 50  0001 C CNN
-F 4 "4609X-101-474LF-ND" H 4250 1350 50  0001 C CNN "Digi-Key_PN"
-F 5 "4609X-101-474LF" H 4250 1350 50  0001 C CNN "MPN"
-F 6 "Bourns Inc." H 4250 1350 50  0001 C CNN "Manufacturer"
-	1    4250 1350
-	1    0    0    -1  
-$EndComp
-Text Notes 3700 1100 0    50   ~ 0
-.
-Text Notes 5250 950  0    50   ~ 0
-192.168.203.
-Text Label 6850 1850 0    50   ~ 0
-IP[0..15]
 Connection ~ 4900 2850
 $Comp
 L Device:C C26
@@ -2376,10 +1784,6 @@ F 3 "~" H 3650 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9950 1650 10350 1650
-Wire Bus Line
-	7250 2050 7250 6450
-Wire Bus Line
-	2750 1850 7250 1850
 $Comp
 L Device:C C4
 U 1 1 5D5C0895
@@ -2438,4 +1842,71 @@ F 6 "KEMET" H 3900 6900 50  0001 C CNN "Manufacturer"
 	1    3900 6900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D5D4FD3
+P 4700 3750
+F 0 "TP2" H 4758 3868 50  0000 L CNN
+F 1 "+12V" H 4758 3777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4900 3750 50  0001 C CNN
+F 3 "~" H 4900 3750 50  0001 C CNN
+	1    4700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3750 4700 3750
+Connection ~ 4550 3750
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D5E8B50
+P 4000 5150
+F 0 "TP3" H 4058 5268 50  0000 L CNN
+F 1 "+5V" H 4058 5177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4200 5150 50  0001 C CNN
+F 3 "~" H 4200 5150 50  0001 C CNN
+	1    4000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5150 4000 5150
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D5FB0F7
+P 4050 6450
+F 0 "TP4" H 4108 6568 50  0000 L CNN
+F 1 "+3.3V" H 4108 6477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4250 6450 50  0001 C CNN
+F 3 "~" H 4250 6450 50  0001 C CNN
+	1    4050 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6450 4050 6450
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D60D5D1
+P 9350 1050
+F 0 "TP1" H 9400 1200 50  0000 L CNN
+F 1 "+3.3V_IMU" H 9400 1100 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9550 1050 50  0001 C CNN
+F 3 "~" H 9550 1050 50  0001 C CNN
+	1    9350 1050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6800 2850
+NoConn ~ 6800 2950
+NoConn ~ 6800 3050
+NoConn ~ 6800 3150
+NoConn ~ 6800 3250
+NoConn ~ 6800 3350
+NoConn ~ 6800 3450
+NoConn ~ 6800 3550
+NoConn ~ 6800 5250
+NoConn ~ 6800 5350
+NoConn ~ 6800 5750
+NoConn ~ 6800 5850
+NoConn ~ 6800 5950
+NoConn ~ 6800 6050
+NoConn ~ 6800 6150
+NoConn ~ 6800 6250
 $EndSCHEMATC
