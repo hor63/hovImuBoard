@@ -664,27 +664,13 @@ L Device:C C8
 U 1 1 5D527391
 P 5150 3550
 F 0 "C8" H 5150 3450 50  0000 R CNN
-F 1 "18pF" H 5150 3650 50  0000 R CNN
+F 1 "20pF" H 5150 3650 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5188 3400 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21C180JBANNNC.jsp" H 5150 3550 50  0001 C CNN
-F 4 "1276-1107-1-ND" V 5150 3550 50  0001 C CNN "Digi-Key_PN"
-F 5 "CL21C180JBANNNC" V 5150 3550 50  0001 C CNN "MPN"
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21C200JBANNNC.jsp" H 5150 3550 50  0001 C CNN
+F 4 "1276-1829-1-ND" V 5150 3550 50  0001 C CNN "Digi-Key_PN"
+F 5 "CL21C200JBANNNC" V 5150 3550 50  0001 C CNN "MPN"
 F 6 "Samsung Electro-Mechanics" V 5150 3550 50  0001 C CNN "Manufacturer"
 	1    5150 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5D5248EF
-P 5450 3550
-F 0 "C9" H 5450 3450 50  0000 R CNN
-F 1 "18pF" H 5450 3650 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5488 3400 50  0001 C CNN
-F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21C180JBANNNC.jsp" H 5450 3550 50  0001 C CNN
-F 4 "1276-1107-1-ND" V 5450 3550 50  0001 C CNN "Digi-Key_PN"
-F 5 "CL21C180JBANNNC" V 5450 3550 50  0001 C CNN "MPN"
-F 6 "Samsung Electro-Mechanics" V 5450 3550 50  0001 C CNN "Manufacturer"
-	1    5450 3550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -700,16 +686,12 @@ L hovImuBoard:NX3225GD-8MHZ-STD-CRA-3 XTAL1
 U 1 1 5D4D9057
 P 5150 3150
 F 0 "XTAL1" H 5150 3300 50  0000 C CNN
-F 1 "8MHz" H 5150 3000 50  0000 C CNN
+F 1 "9,216MHz" H 5150 3000 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_HC49-SD" H 5350 3350 60  0001 L CNN
-F 3 "https://abracon.com/Resonators/ABLS2.pdf" H 5350 3450 60  0001 L CNN
-F 4 "535-9864-1-ND" H 5350 3550 60  0001 L CNN "Digi-Key_PN"
-F 5 "ABLS2-8.000MHZ-D4Y-T" H 5350 3650 60  0001 L CNN "MPN"
-F 6 "Crystals, Oscillators, Resonators" H 5350 3750 60  0001 L CNN "Category"
-F 7 "Crystals" H 5350 3850 60  0001 L CNN "Family"
-F 8 "8MHz ±30ppm Crystal 18pF 80 Ohms HC-49/US" H 5350 4150 60  0001 L CNN "Description"
-F 9 "Abracon LLC" H 5350 4250 60  0001 L CNN "Manufacturer"
-F 10 "Active" H 5350 4350 60  0001 L CNN "Status"
+F 3 "https://www.ecsxtal.com/store/pdf/csm-7x.pdf" H 5350 3450 60  0001 L CNN
+F 4 "XC1274CT-ND" H 5350 3550 60  0001 L CNN "Digi-Key_PN"
+F 5 "ECS-92.1-20-5PX-TR" H 5350 3650 60  0001 L CNN "MPN"
+F 6 "ECS Inc." H 5350 4250 60  0001 L CNN "Manufacturer"
 	1    5150 3150
 	0    -1   -1   0   
 $EndComp
@@ -1909,4 +1891,128 @@ NoConn ~ 6800 5950
 NoConn ~ 6800 6050
 NoConn ~ 6800 6150
 NoConn ~ 6800 6250
+$Comp
+L Device:C C9
+U 1 1 5D5F3117
+P 5450 3550
+F 0 "C9" H 5450 3450 50  0000 R CNN
+F 1 "20pF" H 5450 3650 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5488 3400 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21C200JBANNNC.jsp" H 5450 3550 50  0001 C CNN
+F 4 "1276-1829-1-ND" V 5450 3550 50  0001 C CNN "Digi-Key_PN"
+F 5 "CL21C200JBANNNC" V 5450 3550 50  0001 C CNN "MPN"
+F 6 "Samsung Electro-Mechanics" V 5450 3550 50  0001 C CNN "Manufacturer"
+	1    5450 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5D5F614B
+P 1700 1000
+F 0 "LOGO1" H 1700 1275 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 1700 775 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_Copper" H 1700 1000 50  0001 C CNN
+F 3 "~" H 1700 1000 50  0001 C CNN
+	1    1700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO2
+U 1 1 5D5F6CFD
+P 2350 1000
+F 0 "LOGO2" H 2350 1275 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 2350 775 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_Copper" H 2350 1000 50  0001 C CNN
+F 3 "~" H 2350 1000 50  0001 C CNN
+	1    2350 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5D5F84F4
+P 3350 950
+F 0 "H1" H 3450 999 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3450 908 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 3350 950 50  0001 C CNN
+F 3 "~" H 3350 950 50  0001 C CNN
+	1    3350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5D5FB788
+P 3050 1350
+F 0 "H3" H 3150 1399 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3150 1308 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 3050 1350 50  0001 C CNN
+F 3 "~" H 3050 1350 50  0001 C CNN
+	1    3050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5D5FB92A
+P 4300 950
+F 0 "H2" H 4400 999 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4400 908 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 4300 950 50  0001 C CNN
+F 3 "~" H 4300 950 50  0001 C CNN
+	1    4300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5D5FC33E
+P 4000 1350
+F 0 "H4" H 4100 1399 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4100 1308 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad_Via" H 4000 1350 50  0001 C CNN
+F 3 "~" H 4000 1350 50  0001 C CNN
+	1    4000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6733FB
+P 3050 1450
+F 0 "#PWR?" H 3050 1200 50  0001 C CNN
+F 1 "GND" H 3055 1277 50  0000 C CNN
+F 2 "" H 3050 1450 50  0001 C CNN
+F 3 "" H 3050 1450 50  0001 C CNN
+	1    3050 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D673B74
+P 4000 1450
+F 0 "#PWR?" H 4000 1200 50  0001 C CNN
+F 1 "GND" H 4005 1277 50  0000 C CNN
+F 2 "" H 4000 1450 50  0001 C CNN
+F 3 "" H 4000 1450 50  0001 C CNN
+	1    4000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D673E04
+P 4300 1050
+F 0 "#PWR?" H 4300 800 50  0001 C CNN
+F 1 "GND" H 4305 877 50  0000 C CNN
+F 2 "" H 4300 1050 50  0001 C CNN
+F 3 "" H 4300 1050 50  0001 C CNN
+	1    4300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D673E67
+P 3350 1050
+F 0 "#PWR?" H 3350 800 50  0001 C CNN
+F 1 "GND" H 3355 877 50  0000 C CNN
+F 2 "" H 3350 1050 50  0001 C CNN
+F 3 "" H 3350 1050 50  0001 C CNN
+	1    3350 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
