@@ -33,6 +33,11 @@ K IMU ACCEL/GYRO/MAG
 F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf
 $ENDCMP
 #
+$CMP Box
+D Box
+F http://www.budind.com/pdf/hb1935.pdf
+$ENDCMP
+#
 $CMP L78L05_SOT89
 D Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89
 K Voltage Regulator 100mA Positive

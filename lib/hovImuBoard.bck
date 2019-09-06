@@ -27,6 +27,12 @@ K AVR 8bit Microcontroller MegaAVR PicoPower
 F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf
 $ENDCMP
 #
+$CMP BMX160
+D Accelerometer, Gyroscope, Magnetometer, 3 Axis Sensor I²C, SPI Output
+K IMU ACCEL/GYRO/MAG
+F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf
+$ENDCMP
+#
 $CMP L78L05_SOT89
 D Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89
 K Voltage Regulator 100mA Positive
