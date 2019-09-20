@@ -852,13 +852,12 @@ F 2 "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm" H 8700 2750 60  0001 L CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf" H 8700 1750 60  0001 L CNN
 F 4 "828-1087-1-ND" H 8700 1850 60  0001 L CNN "Digi-Key_PN"
 F 5 "BMX160" H 8700 1950 60  0001 L CNN "MPN"
-F 6 "Sensors, Transducers" H 8700 2050 60  0001 L CNN "Category"
-F 7 "Motion Sensors - IMUs (Inertial Measurement Units)" H 8700 2150 60  0001 L CNN "Family"
-F 8 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf" H 8700 2250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/bosch-sensortec/BMX160/828-1087-1-ND/9674247" H 8700 2350 60  0001 L CNN "DK_Detail_Page"
-F 10 "Accelerometer, Gyroscope, Magnetometer, 3 Axis Sensor I²C, SPI Output" H 8700 2450 60  0001 L CNN "Description"
-F 11 "Bosch Sensortec" H 8700 2550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 8700 2650 60  0001 L CNN "Status"
+F 6 "Motion Sensors - IMUs (Inertial Measurement Units)" H 8700 2150 60  0001 L CNN "Family"
+F 7 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMX160-DS000.pdf" H 8700 2250 60  0001 L CNN "DK_Datasheet_Link"
+F 8 "/product-detail/en/bosch-sensortec/BMX160/828-1087-1-ND/9674247" H 8700 2350 60  0001 L CNN "DK_Detail_Page"
+F 9 "Accelerometer, Gyroscope, Magnetometer, 3 Axis Sensor I²C, SPI Output" H 8700 2450 60  0001 L CNN "Description"
+F 10 "Bosch Sensortec" H 8700 2550 60  0001 L CNN "Manufacturer"
+F 11 "Active" H 8700 2650 60  0001 L CNN "Status"
 	1    8500 1450
 	1    0    0    -1  
 $EndComp
@@ -1258,7 +1257,6 @@ F 3 "https://www.yuden.co.jp/productdata/catalog/wound04_e.pdf" H 3450 3750 50  
 F 4 "587-4289-1-ND" H 3450 3750 50  0001 C CNN "Digi-Key_PN"
 F 5 "NRV2010TR47NGF" H 3450 3750 50  0001 C CNN "MPN"
 F 6 "Taiyo Yuden" H 3450 3750 50  0001 C CNN "Manufacturer"
-F 7 "Fixed Inductors" H 3450 3750 50  0001 C CNN "Category"
 	1    3450 3750
 	0    -1   -1   0   
 $EndComp
@@ -1273,7 +1271,6 @@ F 3 "https://www.yuden.co.jp/productdata/catalog/wound04_e.pdf" H 3950 3750 50  
 F 4 "587-2892-1-ND" H 3950 3750 50  0001 C CNN "Digi-Key_PN"
 F 5 "NRS4018T3R3MDGJ" H 3950 3750 50  0001 C CNN "MPN"
 F 6 "Taiyo Yuden" H 3950 3750 50  0001 C CNN "Manufacturer"
-F 7 "Fixed Inductors" H 3950 3750 50  0001 C CNN "Category"
 	1    3950 3750
 	0    -1   -1   0   
 $EndComp
@@ -1306,7 +1303,6 @@ F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MCEE1005TR10MHN&u=M" H 4250 34
 F 4 "587-6430-1-ND" H 4250 3450 50  0001 C CNN "Digi-Key_PN"
 F 5 "MCEE1005TR10MHN" H 4250 3450 50  0001 C CNN "MPN"
 F 6 "Taiyo Yuden" H 4250 3450 50  0001 C CNN "Manufacturer"
-F 7 "Fixed Inductors" H 4250 3450 50  0001 C CNN "Category"
 	1    4250 3450
 	0    -1   -1   0   
 $EndComp
@@ -1583,12 +1579,11 @@ F 2 "hovImuBoard:Ethernet_Jack_54602-908LF" H 1900 4250 50  0001 L CNN
 F 3 "~" H 1900 4350 60  0001 L CNN
 F 4 "609-1046-ND" H 1900 4450 60  0001 L CNN "Digi-Key_PN"
 F 5 "54602-908LF" H 1900 4550 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 1900 4650 60  0001 L CNN "Category"
-F 7 "Modular Connectors - Jacks" H 1900 4750 60  0001 L CNN "Family"
-F 8 "/product-detail/en/amphenol-icc-fci/54602-908LF/609-1046-ND/1001360" H 1900 4950 60  0001 L CNN "DK_Detail_Page"
-F 9 "CONN MOD JACK 8P8C R/A UNSHLD" H 1900 5050 60  0001 L CNN "Description"
-F 10 "Amphenol ICC (FCI)" H 1900 5150 60  0001 L CNN "Manufacturer"
-F 11 "Active" H 1900 5250 60  0001 L CNN "Status"
+F 6 "Modular Connectors - Jacks" H 1900 4750 60  0001 L CNN "Family"
+F 7 "/product-detail/en/amphenol-icc-fci/54602-908LF/609-1046-ND/1001360" H 1900 4950 60  0001 L CNN "DK_Detail_Page"
+F 8 "CONN MOD JACK 8P8C R/A UNSHLD" H 1900 5050 60  0001 L CNN "Description"
+F 9 "Amphenol ICC (FCI)" H 1900 5150 60  0001 L CNN "Manufacturer"
+F 10 "Active" H 1900 5250 60  0001 L CNN "Status"
 	1    1700 4050
 	0    1    1    0   
 $EndComp
