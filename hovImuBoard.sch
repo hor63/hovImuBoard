@@ -1007,7 +1007,7 @@ P 6200 4550
 F 0 "U4" H 6200 2461 50  0000 C CNN
 F 1 "ATmega1284P-AU" H 6200 2370 50  0000 C CNN
 F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 8100 6200 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8272-8-bit-AVR-microcontroller-ATmega164A_PA-324A_PA-644A_PA-1284_P_datasheet.pdf" H 6200 4550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega164A_PA-324A_PA-644A_PA-1284_P_Data-Sheet-40002070A.pdf" H 6200 4550 50  0001 C CNN
 F 4 "ATmega1284P-AU-ND" H 7300 6050 50  0001 L CNN "Digi-Key_PN"
 F 5 "ATmega1284P-AU" H 7300 5900 50  0001 L CNN "MPN"
 F 6 "IC MCU 8BIT 128KB FLASH 44TQFP" H 7300 6350 50  0001 L CNN "Description"
