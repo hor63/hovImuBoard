@@ -38,6 +38,16 @@ D Box
 F http://www.budind.com/pdf/hb1935.pdf
 $ENDCMP
 #
+$CMP GND_BMX160
+D Power symbol creates a global label with name "GND_BMX160" , ground
+K power-flag
+$ENDCMP
+#
+$CMP GND_OSC
+D Power symbol creates a global label with name "GND_OSC" , ground
+K power-flag
+$ENDCMP
+#
 $CMP L78L05_SOT89
 D Positive 100mA 30V Linear Regulator, Fixed Output 5V, SOT-89
 K Voltage Regulator 100mA Positive

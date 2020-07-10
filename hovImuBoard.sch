@@ -5,11 +5,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "horOpenVario IMU sensorboard"
-Date "17-Aug-2019"
-Rev "0.1"
+Date "09-Jul-2020"
+Rev "0.2"
 Comp "OpenVario.org"
 Comment1 "Licensed under CERN OHL v.1.2 or later"
-Comment2 "(c) Kai Horstmann 2019"
+Comment2 "(c) Kai Horstmann 2020"
 Comment3 "This is a TCP-I2C bridge with an IMU chip"
 Comment4 "Sensor board for OpenVario for the IMU"
 $EndDescr
@@ -92,9 +92,9 @@ Wire Wire Line
 	1650 2750 1350 2750
 Connection ~ 1350 2750
 Wire Wire Line
-	5450 3700 5450 3750
+	5450 3700 5450 3900
 Wire Wire Line
-	5150 3700 5150 3750
+	5150 3700 5150 3900
 $Comp
 L power:GND #PWR011
 U 1 1 5D53C168
@@ -533,20 +533,6 @@ F 3 "" H 5400 2500 50  0001 C CNN
 	1    5400 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L hovImuBoard:LD2981 U1
-U 1 1 5D62F248
-P 10350 1350
-F 0 "U1" H 10350 1592 50  0000 C CNN
-F 1 "LD2981" H 10350 1501 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 10350 1550 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/b7/b5/a1/83/9c/bd/4a/90/CD00001635/files/CD00001635.pdf/jcr:content/translations/en.CD00001635.pdf" H 10350 1300 50  0001 C CNN
-F 4 "497-1524-1-ND" H 10350 1650 50  0001 C CNN "Digi-Key_PN"
-F 5 "LD2981ABU33TR" H 10350 1750 50  0001 C CNN "MPN"
-F 6 "STMicroelectronics" H 10350 1850 50  0001 C CNN "Manufacturer"
-	1    10350 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 6550 3500 6550
 Wire Wire Line
@@ -576,35 +562,17 @@ $EndComp
 Connection ~ 1350 2450
 Wire Wire Line
 	9950 1350 10050 1350
-Wire Wire Line
-	10650 1350 10750 1350
-Wire Wire Line
-	10750 1350 10750 1050
 Text Label 10750 1050 0    50   ~ 0
 3.3V_IMU
-Connection ~ 10350 1650
-Wire Wire Line
-	10350 1650 10750 1650
-$Comp
-L power:GND #PWR06
-U 1 1 5D6676A7
-P 9350 1450
-F 0 "#PWR06" H 9350 1200 50  0001 C CNN
-F 1 "GND" H 9355 1277 50  0000 C CNN
-F 2 "" H 9350 1450 50  0001 C CNN
-F 3 "" H 9350 1450 50  0001 C CNN
-	1    9350 1450
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 5D66BC67
-P 10350 1650
-F 0 "#PWR07" H 10350 1400 50  0001 C CNN
-F 1 "GND" H 10355 1477 50  0000 C CNN
-F 2 "" H 10350 1650 50  0001 C CNN
-F 3 "" H 10350 1650 50  0001 C CNN
-	1    10350 1650
+P 10350 1850
+F 0 "#PWR07" H 10350 1600 50  0001 C CNN
+F 1 "GND" H 10355 1677 50  0000 C CNN
+F 2 "" H 10350 1850 50  0001 C CNN
+F 3 "" H 10350 1850 50  0001 C CNN
+	1    10350 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -626,34 +594,17 @@ F 11 "Active" H 8700 2650 60  0001 L CNN "Status"
 	1    8500 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8600 1900 8600 1950
-Wire Wire Line
-	8450 1900 8450 1950
 $Comp
 L power:GND #PWR08
 U 1 1 5D52B546
-P 8450 1950
-F 0 "#PWR08" H 8450 1700 50  0001 C CNN
-F 1 "GND" H 8455 1777 50  0000 C CNN
-F 2 "" H 8450 1950 50  0001 C CNN
-F 3 "" H 8450 1950 50  0001 C CNN
-	1    8450 1950
+P 7450 1900
+F 0 "#PWR08" H 7450 1650 50  0001 C CNN
+F 1 "GND" H 7455 1727 50  0000 C CNN
+F 2 "" H 7450 1900 50  0001 C CNN
+F 3 "" H 7450 1900 50  0001 C CNN
+	1    7450 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5D52B8B7
-P 8600 1950
-F 0 "#PWR09" H 8600 1700 50  0001 C CNN
-F 1 "GND" H 8605 1777 50  0000 C CNN
-F 2 "" H 8600 1950 50  0001 C CNN
-F 3 "" H 8600 1950 50  0001 C CNN
-	1    8600 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 1350 9350 1450
 Text Label 10150 4200 0    50   ~ 0
 JTAG_TCK
 $Comp
@@ -701,7 +652,6 @@ Connection ~ 2800 7150
 Connection ~ 2700 7150
 Wire Wire Line
 	2700 7150 2800 7150
-NoConn ~ 8100 1250
 NoConn ~ 8100 1350
 $Comp
 L Jumper:Jumper_2_Bridged JP19
@@ -1223,8 +1173,8 @@ Wire Notes Line
 Text Notes 2350 3100 0    50   ~ 0
 LVDS transceiver
 Wire Wire Line
-	8600 1050 9350 1050
-Connection ~ 9350 1050
+	8600 1050 9500 1050
+Connection ~ 9500 1050
 Wire Notes Line
 	11100 850  11100 2200
 Text Notes 7800 800  0    50   ~ 0
@@ -1423,8 +1373,6 @@ F 3 "~" H 3650 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9950 1650 10350 1650
-Wire Wire Line
 	3200 4450 3800 4450
 $Comp
 L Connector:TestPoint TP2
@@ -1469,12 +1417,12 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5D60D5D1
-P 9350 1050
-F 0 "TP1" H 9400 1200 50  0000 L CNN
-F 1 "+3.3V_IMU" H 9400 1100 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9550 1050 50  0001 C CNN
-F 3 "~" H 9550 1050 50  0001 C CNN
-	1    9350 1050
+P 9500 1050
+F 0 "TP1" H 9550 1200 50  0000 L CNN
+F 1 "+3.3V_IMU" H 9550 1100 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9700 1050 50  0001 C CNN
+F 3 "~" H 9700 1050 50  0001 C CNN
+	1    9500 1050
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6800 2850
@@ -1489,7 +1437,6 @@ NoConn ~ 6800 5250
 NoConn ~ 6800 5350
 NoConn ~ 6800 5950
 NoConn ~ 6800 6050
-NoConn ~ 6800 6150
 NoConn ~ 6800 6250
 $Comp
 L Device:C C9
@@ -1638,20 +1585,18 @@ $EndComp
 $Comp
 L Device:C C2
 U 1 1 5F063BCE
-P 9350 1200
-F 0 "C2" H 9250 1200 50  0000 R CNN
-F 1 "100nF" H 9350 1300 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9388 1050 50  0001 C CNN
-F 3 "https://www.knowlescapacitors.com/getattachment/6c03b3e4-49f0-4da1-9eda-f8acf5f7442f/Non-Magnetic" H 9350 1200 50  0001 C CNN
-F 4 "1608-1295-1-ND" V 9350 1200 50  0001 C CNN "Digi-Key_PN"
-F 5 "060330160104JXT" V 9350 1200 50  0001 C CNN "MPN"
-F 6 "Knowles Syfer" V 9350 1200 50  0001 C CNN "Manufacturer"
-F 7 "CAP CER 0.1UF 25V X7R 0603 Non-magnetic" H 9350 1200 50  0001 C CNN "Description"
-	1    9350 1200
+P 9500 1200
+F 0 "C2" H 9400 1200 50  0000 R CNN
+F 1 "100nF" H 9500 1300 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9538 1050 50  0001 C CNN
+F 3 "https://www.knowlescapacitors.com/getattachment/6c03b3e4-49f0-4da1-9eda-f8acf5f7442f/Non-Magnetic" H 9500 1200 50  0001 C CNN
+F 4 "1608-1295-1-ND" V 9500 1200 50  0001 C CNN "Digi-Key_PN"
+F 5 "060330160104JXT" V 9500 1200 50  0001 C CNN "MPN"
+F 6 "Knowles Syfer" V 9500 1200 50  0001 C CNN "Manufacturer"
+F 7 "CAP CER 0.1UF 25V X7R 0603 Non-magnetic" H 9500 1200 50  0001 C CNN "Description"
+	1    9500 1200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9350 1050 10750 1050
 $Comp
 L Device:C C26
 U 1 1 5D5D1035
@@ -1672,7 +1617,7 @@ L Device:C C5
 U 1 1 5F0A5AB8
 P 10750 1500
 F 0 "C5" H 10750 1400 50  0000 R CNN
-F 1 "4.7uF" H 10750 1600 50  0000 R CNN
+F 1 "4.7uF" H 10650 1500 50  0000 R CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 10788 1350 50  0001 C CNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/C1206C475K3RACTU.pdf" H 10750 1500 50  0001 C CNN
 F 4 "399-8204-1-ND" V 10750 1500 50  0001 C CNN "Digi-Key_PN"
@@ -1682,7 +1627,6 @@ F 7 "CAP CER 4.7UF 25V X7R 1206" H 10750 1500 50  0001 C CNN "Description"
 	1    10750 1500
 	-1   0    0    1   
 $EndComp
-Connection ~ 10750 1350
 $Comp
 L Device:C C13
 U 1 1 5F0B866F
@@ -1809,53 +1753,31 @@ Connection ~ 2150 6450
 Wire Wire Line
 	2150 6450 2300 6450
 Wire Notes Line
-	7100 2200 7100 850 
-Wire Notes Line
 	11100 2200 7100 2200
 Wire Notes Line
 	11100 850  7100 850 
 Wire Wire Line
-	7650 1050 7800 1050
-Connection ~ 7650 1050
+	7450 1500 7450 1550
+Connection ~ 7450 1500
 Wire Wire Line
-	7650 1150 7650 1050
+	8100 1500 7450 1500
 Wire Wire Line
-	7650 1500 7650 1550
-Connection ~ 7650 1500
+	7450 1450 7450 1500
 Wire Wire Line
-	8100 1500 7650 1500
+	7450 1900 8450 1900
 Wire Wire Line
-	7650 1450 7650 1500
-Wire Wire Line
-	7250 1050 7650 1050
-Wire Wire Line
-	7650 1900 8450 1900
-Wire Wire Line
-	7650 1850 7650 1900
-$Comp
-L Jumper:SolderJumper_2_Bridged JP18
-U 1 1 5D83F540
-P 7650 1700
-F 0 "JP18" H 7600 1600 50  0000 L CNN
-F 1 "0x68" H 7550 1800 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7650 1700 50  0001 C CNN
-F 3 "~" H 7650 1700 50  0001 C CNN
-	1    7650 1700
-	0    1    1    0   
-$EndComp
+	7450 1850 7450 1900
 $Comp
 L Jumper:SolderJumper_2_Open JP17
 U 1 1 5D83E0B0
-P 7650 1300
-F 0 "JP17" H 7600 1200 50  0000 L CNN
-F 1 "0x69" H 7550 1400 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7650 1300 50  0001 C CNN
-F 3 "~" H 7650 1300 50  0001 C CNN
-	1    7650 1300
+P 7450 1300
+F 0 "JP17" H 7400 1200 50  0000 L CNN
+F 1 "0x69" H 7350 1400 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7450 1300 50  0001 C CNN
+F 3 "~" H 7450 1300 50  0001 C CNN
+	1    7450 1300
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7250 1350 7250 1450
 Wire Wire Line
 	7800 1050 8450 1050
 Connection ~ 7800 1050
@@ -1875,32 +1797,20 @@ F 3 "" H 7800 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
-U 1 1 5D66D03A
-P 7250 1450
-F 0 "#PWR05" H 7250 1200 50  0001 C CNN
-F 1 "GND" H 7255 1277 50  0000 C CNN
-F 2 "" H 7250 1450 50  0001 C CNN
-F 3 "" H 7250 1450 50  0001 C CNN
-	1    7250 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 5D66C3E8
-P 7250 1200
-F 0 "C1" H 7250 1100 50  0000 R CNN
-F 1 "100nF" H 7250 1300 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7288 1050 50  0001 C CNN
-F 3 "https://www.knowlescapacitors.com/getattachment/6c03b3e4-49f0-4da1-9eda-f8acf5f7442f/Non-Magnetic" H 7250 1200 50  0001 C CNN
-F 4 "1608-1295-1-ND" V 7250 1200 50  0001 C CNN "Digi-Key_PN"
-F 5 "060330160104JXT" V 7250 1200 50  0001 C CNN "MPN"
-F 6 "Knowles Syfer" V 7250 1200 50  0001 C CNN "Manufacturer"
-F 7 "CAP CER 0.1UF 25V X7R 0603 Non-magnetic" H 7250 1200 50  0001 C CNN "Description"
-	1    7250 1200
+P 7100 1200
+F 0 "C1" H 7100 1100 50  0000 R CNN
+F 1 "100nF" H 7100 1300 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7138 1050 50  0001 C CNN
+F 3 "https://www.knowlescapacitors.com/getattachment/6c03b3e4-49f0-4da1-9eda-f8acf5f7442f/Non-Magnetic" H 7100 1200 50  0001 C CNN
+F 4 "1608-1295-1-ND" V 7100 1200 50  0001 C CNN "Digi-Key_PN"
+F 5 "060330160104JXT" V 7100 1200 50  0001 C CNN "MPN"
+F 6 "Knowles Syfer" V 7100 1200 50  0001 C CNN "Manufacturer"
+F 7 "CAP CER 0.1UF 25V X7R 0603 Non-magnetic" H 7100 1200 50  0001 C CNN "Description"
+	1    7100 1200
 	-1   0    0    1   
 $EndComp
-Connection ~ 8450 1900
 Wire Wire Line
 	8400 3600 8550 3600
 Wire Wire Line
@@ -1957,31 +1867,165 @@ Wire Wire Line
 	3900 2250 3650 2250
 Wire Wire Line
 	3650 2250 3650 2450
+Connection ~ 7450 1900
 Wire Wire Line
-	5150 3750 5300 3750
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5F27ED85
-P 5300 3900
-F 0 "JP1" V 5254 3968 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged" V 5345 3968 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 5300 3900 50  0001 C CNN
-F 3 "~" H 5300 3900 50  0001 C CNN
-	1    5300 3900
-	0    1    1    0   
-$EndComp
-Connection ~ 5300 3750
+	10350 1650 10350 1750
 Wire Wire Line
-	5300 3750 5450 3750
+	5150 3700 5450 3700
+Connection ~ 5150 3700
+Connection ~ 5450 3700
+Wire Wire Line
+	9500 1050 10750 1050
 $Comp
-L power:GND #PWR0107
-U 1 1 5F280093
-P 5300 4050
-F 0 "#PWR0107" H 5300 3800 50  0001 C CNN
-F 1 "GND" H 5305 3877 50  0000 C CNN
-F 2 "" H 5300 4050 50  0001 C CNN
-F 3 "" H 5300 4050 50  0001 C CNN
-	1    5300 4050
+L hovImuBoard:LD2981 U1
+U 1 1 5D62F248
+P 10350 1350
+F 0 "U1" H 10350 1592 50  0000 C CNN
+F 1 "LD2981" H 10350 1501 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 10350 1550 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group1/b7/b5/a1/83/9c/bd/4a/90/CD00001635/files/CD00001635.pdf/jcr:content/translations/en.CD00001635.pdf" H 10350 1300 50  0001 C CNN
+F 4 "497-1524-1-ND" H 10350 1650 50  0001 C CNN "Digi-Key_PN"
+F 5 "LD2981ABU33TR" H 10350 1750 50  0001 C CNN "MPN"
+F 6 "STMicroelectronics" H 10350 1850 50  0001 C CNN "Manufacturer"
+	1    10350 1350
 	1    0    0    -1  
 $EndComp
+Connection ~ 10350 1750
+Wire Wire Line
+	10350 1750 10350 1850
+Wire Wire Line
+	9950 1650 9950 1750
+Wire Wire Line
+	9950 1750 10350 1750
+Wire Wire Line
+	9500 1350 9500 1550
+Wire Wire Line
+	9950 1850 9950 1750
+Wire Wire Line
+	9950 2050 9950 2100
+$Comp
+L hovImuBoard:GND_BMX160 #PWR0108
+U 1 1 5F0898FF
+P 9950 2100
+F 0 "#PWR0108" H 9950 1850 50  0001 C CNN
+F 1 "GND_BMX160" H 9955 1927 50  0000 C CNN
+F 2 "" H 9950 2100 50  0001 C CNN
+F 3 "" H 9950 2100 50  0001 C CNN
+	1    9950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L hovImuBoard:GND_BMX160 #PWR0109
+U 1 1 5F08A540
+P 9500 1550
+F 0 "#PWR0109" H 9500 1300 50  0001 C CNN
+F 1 "GND_BMX160" H 9505 1377 50  0000 C CNN
+F 2 "" H 9500 1550 50  0001 C CNN
+F 3 "" H 9500 1550 50  0001 C CNN
+	1    9500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L hovImuBoard:GND_BMX160 #PWR0110
+U 1 1 5F08AFC0
+P 8600 1900
+F 0 "#PWR0110" H 8600 1650 50  0001 C CNN
+F 1 "GND_BMX160" H 8605 1727 50  0000 C CNN
+F 2 "" H 8600 1900 50  0001 C CNN
+F 3 "" H 8600 1900 50  0001 C CNN
+	1    8600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F08BF6C
+P 9950 2100
+F 0 "#FLG0103" H 9950 2175 50  0001 C CNN
+F 1 "PWR_FLAG" V 9950 2228 50  0000 L CNN
+F 2 "" H 9950 2100 50  0001 C CNN
+F 3 "~" H 9950 2100 50  0001 C CNN
+	1    9950 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L hovImuBoard:GND_OSC #PWR0107
+U 1 1 5F0E412B
+P 5150 3900
+F 0 "#PWR0107" H 5150 3650 50  0001 C CNN
+F 1 "GND_OSC" H 5155 3727 50  0000 C CNN
+F 2 "" H 5150 3900 50  0001 C CNN
+F 3 "" H 5150 3900 50  0001 C CNN
+	1    5150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1050 7450 1050
+Text Label 8100 1250 2    50   ~ 0
+DATA_READY
+Text Label 6800 6150 0    50   ~ 0
+DATA_READY
+$Comp
+L Jumper:SolderJumper_2_Bridged JP18
+U 1 1 5D83F540
+P 7450 1700
+F 0 "JP18" H 7400 1600 50  0000 L CNN
+F 1 "0x68" H 7350 1800 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7450 1700 50  0001 C CNN
+F 3 "~" H 7450 1700 50  0001 C CNN
+	1    7450 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 1350 7100 1900
+Wire Wire Line
+	7100 1900 7450 1900
+Wire Wire Line
+	7450 1150 7450 1050
+Connection ~ 7450 1050
+Wire Wire Line
+	7450 1050 7800 1050
+$Comp
+L Device:Net-Tie_2 NT2
+U 1 1 5F1D8434
+P 5450 4000
+F 0 "NT2" V 5404 4044 50  0000 L CNN
+F 1 "Net-Tie_2" V 5495 4044 50  0000 L CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5450 4000 50  0001 C CNN
+F 3 "~" H 5450 4000 50  0001 C CNN
+	1    5450 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5F1D8FE9
+P 5450 4100
+F 0 "#PWR0111" H 5450 3850 50  0001 C CNN
+F 1 "GND" H 5455 3927 50  0000 C CNN
+F 2 "" H 5450 4100 50  0001 C CNN
+F 3 "" H 5450 4100 50  0001 C CNN
+	1    5450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 1350 10750 1050
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 5F084BB3
+P 9950 1950
+F 0 "NT1" H 9950 2131 50  0000 C CNN
+F 1 "Net-Tie_2" H 9950 2040 50  0000 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad2.0mm" H 9950 1950 50  0001 C CNN
+F 3 "~" H 9950 1950 50  0001 C CNN
+	1    9950 1950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9950 1750
+Connection ~ 9950 2100
+Wire Wire Line
+	10350 1750 10750 1750
+Wire Wire Line
+	10750 1750 10750 1650
+Wire Wire Line
+	10650 1350 10750 1350
+Connection ~ 10750 1350
 $EndSCHEMATC
