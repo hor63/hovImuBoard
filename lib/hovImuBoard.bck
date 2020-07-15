@@ -38,13 +38,19 @@ D Box
 F http://www.budind.com/pdf/hb1935.pdf
 $ENDCMP
 #
+$CMP DB9_Female_RS-232-DCE
+D 9-pin female D-SUB connector
+K connector female D-SUB
+F  ~
+$ENDCMP
+#
 $CMP GND_BMX160
-D Power symbol creates a global label with name "GND1" , ground
+D Power symbol creates a global label with name "GND_BMX160" , ground
 K power-flag
 $ENDCMP
 #
 $CMP GND_OSC
-D Power symbol creates a global label with name "GND1" , ground
+D Power symbol creates a global label with name "GND_OSC" , ground
 K power-flag
 $ENDCMP
 #
@@ -184,6 +190,12 @@ $CMP NX3225GD-8MHZ-STD-CRA-3
 D CRYSTAL 8.0000MHZ 8PF SMD
 K 644-1178-1-ND NX3225GD
 F http://www.ndk.com/images/products/catalog/c_NX3225GD-STD-CRA-3_e.pdf
+$ENDCMP
+#
+$CMP RJ-45-IGC-DCE-Recorder
+D CONN MOD JACK 8P8C R/A UNSHLD
+K 609-1046-ND 54602
+F https://cdn.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_modularjack.pdf
 $ENDCMP
 #
 $CMP SN65HVD32DR
