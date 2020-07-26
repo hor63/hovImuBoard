@@ -38,17 +38,6 @@ F 3 "~" H 4250 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5D4F984A
-P 2600 4450
-F 0 "#FLG03" H 2600 4525 50  0001 C CNN
-F 1 "PWR_FLAG" H 2600 4600 50  0000 C CNN
-F 2 "" H 2600 4450 50  0001 C CNN
-F 3 "~" H 2600 4450 50  0001 C CNN
-	1    2600 4450
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR013
 U 1 1 5D4D5943
 P 1350 2750
@@ -1196,10 +1185,8 @@ Wire Wire Line
 	2100 3950 2350 3950
 Wire Wire Line
 	2100 3850 2600 3850
-Wire Wire Line
-	2100 3750 2300 3750
 $Comp
-L hovImuBoard:54602-908LF J3
+L hovImuBoard:RJ-45-hovIMUBoard-DCE-Board J3
 U 1 1 5D4B7457
 P 1700 4050
 F 0 "J3" V 1108 4044 50  0000 C CNN
@@ -1216,20 +1203,6 @@ F 10 "Active" H 1900 5250 60  0001 L CNN "Status"
 	1    1700 4050
 	0    1    1    0   
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5D9E0353
-P 2300 3750
-F 0 "#FLG01" H 2300 3825 50  0001 C CNN
-F 1 "PWR_FLAG" H 2300 3923 50  0000 C CNN
-F 2 "" H 2300 3750 50  0001 C CNN
-F 3 "~" H 2300 3750 50  0001 C CNN
-	1    2300 3750
-	1    0    0    -1  
-$EndComp
-Connection ~ 2300 3750
-Wire Wire Line
-	2300 3750 2700 3750
 Wire Notes Line
 	9200 5450 10300 5450
 Wire Notes Line
@@ -2039,4 +2012,6 @@ F 3 "~" H 5150 3700 50  0001 C CNN
 	1    5150 3700
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	2100 3750 2700 3750
 $EndSCHEMATC
