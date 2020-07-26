@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "horOpenVario Serial converter for IMU board"
+Title "horOpenVario serial converter for IMU board"
 Date "12-Jul-2020"
 Rev "0.1"
 Comp "OpenVario.org"
@@ -35,10 +35,6 @@ F 3 "" H 5550 2550 50  0001 C CNN
 	1    5550 2550
 	1    0    0    -1  
 $EndComp
-Text Label 5100 3100 2    50   ~ 0
-RX
-Text Label 5100 3200 2    50   ~ 0
-TX
 Text Label 7100 3000 0    50   ~ 0
 RX+
 Text Label 7100 3100 0    50   ~ 0
@@ -394,20 +390,9 @@ U 1 1 5D5F614B
 P 1750 1000
 F 0 "LOGO1" H 1750 1275 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 1750 775 50  0001 C CNN
-F 2 "Symbol:OSHW-Symbol_6.7x6mm_Copper" H 1750 1000 50  0001 C CNN
+F 2 "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" H 1750 1000 50  0001 C CNN
 F 3 "~" H 1750 1000 50  0001 C CNN
 	1    1750 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Small LOGO2
-U 1 1 5D5F6CFD
-P 2400 1000
-F 0 "LOGO2" H 2400 1275 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 2400 775 50  0001 C CNN
-F 2 "Symbol:OSHW-Symbol_6.7x6mm_Copper" H 2400 1000 50  0001 C CNN
-F 3 "~" H 2400 1000 50  0001 C CNN
-	1    2400 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -466,50 +451,41 @@ F 3 "" H 1950 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1950 6450
-Wire Wire Line
-	1950 6450 2300 6450
 $Comp
-L hovImuBoard:DB9_Female_RS-232-DCE J3
-U 1 1 5F115F9D
-P 1750 4150
-F 0 "J3" H 1930 4196 50  0000 L CNN
-F 1 "DB9_Female" H 1930 4105 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_EdgeMount_P2.77mm" H 1750 4150 50  0001 C CNN
-F 3 " ~" H 1750 4150 50  0001 C CNN
-	1    1750 4150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Barrel_Jack J2
+L Connector:Barrel_Jack_Switch J2
 U 1 1 5F15CF43
 P 1200 3200
 F 0 "J2" H 970 3158 50  0000 R CNN
-F 1 "Barrel_Jack" H 970 3249 50  0000 R CNN
-F 2 "" H 1250 3160 50  0001 C CNN
-F 3 "~" H 1250 3160 50  0001 C CNN
+F 1 "Power jack" H 970 3249 50  0000 R CNN
+F 2 "hovImuBoard:CUI_PJ-036AH-SMT-TR" H 1250 3160 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/digikeypdf/pj-036ah-smt-tr.pdf" H 1250 3160 50  0001 C CNN
+F 4 "CONN PWR JACK 2X5.5MM SOLDER" H 1200 3200 50  0001 C CNN "Description"
+F 5 "CP-036AHPJCT-ND" H 1200 3200 50  0001 C CNN "Digi-Key_PN"
+F 6 "PJ-036AH-SMT-TR" H 1200 3200 50  0001 C CNN "MPN"
+F 7 "CUI Devices" H 1200 3200 50  0001 C CNN "Manufacturer"
 	1    1200 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR012
 U 1 1 5F15DE42
-P 1500 3300
-F 0 "#PWR012" H 1500 3050 50  0001 C CNN
-F 1 "GND" H 1505 3127 50  0000 C CNN
-F 2 "" H 1500 3300 50  0001 C CNN
-F 3 "" H 1500 3300 50  0001 C CNN
-	1    1500 3300
+P 1650 3300
+F 0 "#PWR012" H 1650 3050 50  0001 C CNN
+F 1 "GND" H 1655 3127 50  0000 C CNN
+F 2 "" H 1650 3300 50  0001 C CNN
+F 3 "" H 1650 3300 50  0001 C CNN
+	1    1650 3300
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+VDC #PWR011
 U 1 1 5F15EF68
-P 1500 3100
-F 0 "#PWR011" H 1500 3000 50  0001 C CNN
-F 1 "+VDC" H 1500 3375 50  0000 C CNN
-F 2 "" H 1500 3100 50  0001 C CNN
-F 3 "" H 1500 3100 50  0001 C CNN
-	1    1500 3100
+P 1650 3100
+F 0 "#PWR011" H 1650 3000 50  0001 C CNN
+F 1 "+VDC" H 1650 3375 50  0000 C CNN
+F 2 "" H 1650 3100 50  0001 C CNN
+F 3 "" H 1650 3100 50  0001 C CNN
+	1    1650 3100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -595,11 +571,8 @@ F 2 "hovImuBoard:Ethernet_Jack_54602-908LF" H 1800 5650 50  0001 L CNN
 F 3 "~" H 1800 5750 60  0001 L CNN
 F 4 "609-1046-ND" H 1800 5850 60  0001 L CNN "Digi-Key_PN"
 F 5 "54602-908LF" H 1800 5950 60  0001 L CNN "MPN"
-F 6 "Modular Connectors - Jacks" H 1800 6150 60  0001 L CNN "Family"
-F 7 "/product-detail/en/amphenol-icc-fci/54602-908LF/609-1046-ND/1001360" H 1800 6350 60  0001 L CNN "DK_Detail_Page"
-F 8 "CONN MOD JACK 8P8C R/A UNSHLD" H 1800 6450 60  0001 L CNN "Description"
-F 9 "Amphenol ICC (FCI)" H 1800 6550 60  0001 L CNN "Manufacturer"
-F 10 "Active" H 1800 6650 60  0001 L CNN "Status"
+F 6 "CONN MOD JACK 8P8C R/A UNSHLD" H 1800 6450 60  0001 L CNN "Description"
+F 7 "Amphenol ICC (FCI)" H 1800 6550 60  0001 L CNN "Manufacturer"
 	1    1600 5450
 	0    1    -1   0   
 $EndComp
@@ -625,11 +598,8 @@ F 2 "hovImuBoard:Ethernet_Jack_54602-908LF" H 8950 3200 50  0001 L CNN
 F 3 "~" H 8950 3300 60  0001 L CNN
 F 4 "609-1046-ND" H 8950 3400 60  0001 L CNN "Digi-Key_PN"
 F 5 "54602-908LF" H 8950 3500 60  0001 L CNN "MPN"
-F 6 "Modular Connectors - Jacks" H 8950 3700 60  0001 L CNN "Family"
-F 7 "/product-detail/en/amphenol-icc-fci/54602-908LF/609-1046-ND/1001360" H 8950 3900 60  0001 L CNN "DK_Detail_Page"
-F 8 "CONN MOD JACK 8P8C R/A UNSHLD" H 8950 4000 60  0001 L CNN "Description"
-F 9 "Amphenol ICC (FCI)" H 8950 4100 60  0001 L CNN "Manufacturer"
-F 10 "Active" H 8950 4200 60  0001 L CNN "Status"
+F 6 "CONN MOD JACK 8P8C R/A UNSHLD" H 8950 4000 60  0001 L CNN "Description"
+F 7 "Amphenol ICC (FCI)" H 8950 4100 60  0001 L CNN "Manufacturer"
 	1    8750 3000
 	0    -1   1    0   
 $EndComp
@@ -669,12 +639,7 @@ Wire Wire Line
 	2050 3950 2300 3950
 Connection ~ 2300 3950
 Wire Wire Line
-	2300 3950 2300 3100
-Wire Wire Line
 	2050 4150 2400 4150
-Wire Wire Line
-	2400 3500 2400 4150
-Connection ~ 2400 4150
 Wire Wire Line
 	2400 4150 2400 5550
 $Comp
@@ -714,10 +679,6 @@ F 3 "" H 5100 3300 50  0001 C CNN
 	1    5100 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 3500 4650 3500
-Wire Wire Line
-	4650 3500 4650 3200
 $Comp
 L power:GND #PWR04
 U 1 1 5F1FC187
@@ -866,10 +827,6 @@ Wire Wire Line
 	8350 2900 8100 2900
 Wire Wire Line
 	8350 3200 8100 3200
-Wire Wire Line
-	4650 3200 5100 3200
-Wire Wire Line
-	4150 3100 5100 3100
 $Comp
 L Interface_UART:MAX3232 U1
 U 1 1 5F1209EC
@@ -1048,6 +1005,114 @@ F 1 "GND" H 7455 1727 50  0000 C CNN
 F 2 "" H 7450 1900 50  0001 C CNN
 F 3 "" H 7450 1900 50  0001 C CNN
 	1    7450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F135F8C
+P 7450 1300
+F 0 "#FLG0101" H 7450 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 7450 1473 50  0000 C CNN
+F 2 "" H 7450 1300 50  0001 C CNN
+F 3 "~" H 7450 1300 50  0001 C CNN
+	1    7450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6550 2250 6450
+Wire Wire Line
+	1950 6450 2250 6450
+Connection ~ 2250 6450
+Wire Wire Line
+	2250 6450 2300 6450
+Wire Wire Line
+	1500 3100 1650 3100
+Wire Wire Line
+	1500 3300 1650 3300
+Wire Wire Line
+	1500 3200 1500 3300
+Connection ~ 1500 3300
+Connection ~ 2400 4150
+Wire Wire Line
+	2400 3500 2400 4150
+Wire Wire Line
+	2300 3950 2300 3100
+$Comp
+L hovImuBoard:DB9_Female_RS-232-DCE J3
+U 1 1 5F115F9D
+P 1750 4150
+F 0 "J3" H 1930 4196 50  0000 L CNN
+F 1 "DB9_Female" H 1930 4105 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_EdgeMount_P2.77mm" H 1750 4150 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/cmio/sd_hd_stamepd_formed_solder_cup_dsub.pdf" H 1750 4150 50  0001 C CNN
+F 4 "CONN DSUB RCPT 9POS SLDR CUP" H 1750 4150 50  0001 C CNN "Description"
+F 5 "L77SDE09S-ND" H 1750 4150 50  0001 C CNN "Digi-Key_PN"
+F 6 "L77SDE09S" H 1750 4150 50  0001 C CNN "MPN"
+F 7 "Amphenol ICC (Commercial Products)" H 1750 4150 50  0001 C CNN "Manufacturer"
+	1    1750 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 5F17A14F
+P 4400 3650
+F 0 "J6" V 4500 3500 50  0000 C CNN
+F 1 "RX" V 4350 3600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4400 3650 50  0001 C CNN
+F 3 "~" H 4400 3650 50  0001 C CNN
+F 4 "PinHeader1x02 P2.54mm Vertical" H 4400 3650 50  0001 C CNN "Description"
+	1    4400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 5F17FE08
+P 5000 3650
+F 0 "J7" V 5100 3500 50  0000 C CNN
+F 1 "TX" V 4950 3600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5000 3650 50  0001 C CNN
+F 3 "~" H 5000 3650 50  0001 C CNN
+F 4 "PinHeader1x02 P2.54mm Vertical" H 5000 3650 50  0001 C CNN "Description"
+	1    5000 3650
+	-1   0    0    -1  
+$EndComp
+Text Label 5100 3100 2    50   ~ 0
+RX_LVDS
+Text Label 5100 3200 2    50   ~ 0
+TX_LVDS
+Text Label 4650 3650 1    50   ~ 0
+RX_LVDS
+Text Label 4650 3750 3    50   ~ 0
+RX
+Wire Wire Line
+	4600 3650 4650 3650
+Wire Wire Line
+	4600 3750 4650 3750
+Text Label 4150 3100 0    50   ~ 0
+RX
+Text Label 4150 3500 0    50   ~ 0
+TX
+Text Label 4800 3750 3    50   ~ 0
+TX
+Text Label 4800 3650 1    50   ~ 0
+TX_LVDS
+Text Label 2400 4150 0    50   ~ 0
+RX_RS232
+Text Label 2300 3950 0    50   ~ 0
+TX_RS232
+$Comp
+L hovImuBoard:Box H1
+U 1 1 5F1C2B5C
+P 9550 1450
+F 0 "H1" H 9550 1825 50  0000 C CNN
+F 1 "Box" H 9550 1734 50  0000 C CNN
+F 2 "hovImuBoard:Box-MB655030" H 9550 1450 50  0001 C CNN
+F 3 "https://www.hammfg.com/part/MB655030" H 9550 1450 50  0001 C CNN
+F 4 "BOX PLASTIC GRAY 2.56\"L X 1.97\"W" H 9550 1450 50  0001 C CNN "Description"
+F 5 "HM5530-ND" H 9550 1450 50  0001 C CNN "Digi-Key_PN"
+F 6 "MB655030" H 9550 1450 50  0001 C CNN "MPN"
+F 7 "Hammond Manufacturing" H 9550 1450 50  0001 C CNN "Manufacturer"
+	1    9550 1450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

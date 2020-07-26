@@ -198,6 +198,16 @@ K 609-1046-ND 54602
 F https://cdn.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_modularjack.pdf
 $ENDCMP
 #
+$CMP RJ-45-hovIMUBoard-DCE-Board
+D CONN MOD JACK 8P8C R/A UNSHLD
+K 609-1046-ND 54602
+$ENDCMP
+#
+$CMP RJ-45-hovIMUBoard-DTE-PC
+D CONN MOD JACK 8P8C R/A UNSHLD
+K 609-1046-ND 54602
+$ENDCMP
+#
 $CMP SN65HVD32DR
 D 1/1 Transceiver Full RS422, RS485 8-SOIC
 K IC DVR/RCVR RS-485 3.3V 8-SOIC
