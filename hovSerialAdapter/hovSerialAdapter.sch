@@ -1043,7 +1043,7 @@ U 1 1 5F115F9D
 P 1750 4150
 F 0 "J3" H 1930 4196 50  0000 L CNN
 F 1 "DB9_Female" H 1930 4105 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_EdgeMount_P2.77mm" H 1750 4150 50  0001 C CNN
+F 2 "hovImuBoard:DSUB-9_Female_EdgeMount_P2.77mm" H 1750 4150 50  0001 C CNN
 F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/cmio/sd_hd_stamepd_formed_solder_cup_dsub.pdf" H 1750 4150 50  0001 C CNN
 F 4 "CONN DSUB RCPT 9POS SLDR CUP" H 1750 4150 50  0001 C CNN "Description"
 F 5 "L77SDE09S-ND" H 1750 4150 50  0001 C CNN "Digi-Key_PN"
