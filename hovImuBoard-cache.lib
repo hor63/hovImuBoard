@@ -444,6 +444,22 @@ X TDI 9 500 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# hovImuBoard-rescue_Box-hovImuBoard
+#
+DEF hovImuBoard-rescue_Box-hovImuBoard H 0 40 Y Y 1 F N
+F0 "H" 0 0 50 H V C CNN
+F1 "hovImuBoard-rescue_Box-hovImuBoard" 0 100 50 H V C CNN
+F2 "hovImuBoard:Box-CU-1935-MB" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 200 200 -200 0 1 0 N
+X 1 1 -300 150 100 R 50 50 1 1 P
+X 2 2 300 150 100 L 50 50 1 1 P
+X 3 3 300 -150 100 L 50 50 1 1 P
+X 4 4 -300 -150 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # hovImuBoard_ATmega1284P-AU
 #
 DEF hovImuBoard_ATmega1284P-AU U 0 20 Y Y 1 F N
@@ -539,22 +555,6 @@ X GNDIO 6 -50 -450 100 U 50 50 1 1 W
 X GND 7 100 -450 100 U 50 50 1 1 W
 X VDD 8 100 400 100 D 50 50 1 1 W
 X INT2 9 -400 100 100 R 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
-# hovImuBoard_Box
-#
-DEF hovImuBoard_Box H 0 40 Y Y 1 F N
-F0 "H" 0 0 50 H V C CNN
-F1 "hovImuBoard_Box" 0 100 50 H V C CNN
-F2 "hovImuBoard:Box-CU-1935-MB" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -200 200 200 -200 0 1 0 N
-X 1 1 -300 150 100 R 50 50 1 1 P
-X 2 2 300 150 100 L 50 50 1 1 P
-X 3 3 300 -150 100 L 50 50 1 1 P
-X 4 4 -300 -150 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

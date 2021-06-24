@@ -1487,7 +1487,7 @@ RX_DBG
 Text Label 8050 6000 2    50   ~ 0
 TX_DBG
 $Comp
-L hovImuBoard:Box H1
+L hovImuBoard-rescue:Box-hovImuBoard H1
 U 1 1 5D76E284
 P 4450 1250
 F 0 "H1" H 4450 1625 50  0000 C CNN
@@ -1933,10 +1933,6 @@ F 3 "" H 5150 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 1050 7450 1050
-Text Label 8100 1250 2    50   ~ 0
-DATA_READY
-Text Label 6800 6150 0    50   ~ 0
-DATA_READY
 $Comp
 L Jumper:SolderJumper_2_Bridged JP18
 U 1 1 5D83F540
@@ -2014,4 +2010,8 @@ F 3 "~" H 5150 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2100 3750 2700 3750
+Text GLabel 8100 1250 0    50   Input ~ 0
+DATA_READY
+Text GLabel 6800 6150 2    50   Input ~ 0
+DATA_READY
 $EndSCHEMATC
