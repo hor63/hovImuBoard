@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name hovImuBoard)(type KiCad)(uri ${KIPRJMOD}/lib/hovImuBoard.pretty)(options "")(descr ""))
+  (lib (name "hovImuBoard")(type "KiCad")(uri "${KIPRJMOD}/lib/hovImuBoard.pretty")(options "")(descr ""))
 )

@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name hovImuBoard)(type Legacy)(uri ${KIPRJMOD}/lib/hovImuBoard.lib)(options "")(descr ""))
-  (lib (name hovImuBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/hovImuBoard-rescue.lib)(options "")(descr ""))
+  (lib (name "hovImuBoard")(type "KiCad")(uri "${KIPRJMOD}/lib/hovImuBoard.kicad_sym")(options "")(descr ""))
+  (lib (name "hovImuBoard-rescue")(type "KiCad")(uri "${KIPRJMOD}/hovImuBoard-rescue.kicad_sym")(options "")(descr ""))
 )
