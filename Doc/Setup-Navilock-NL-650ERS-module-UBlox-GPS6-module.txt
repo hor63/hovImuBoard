@@ -1,0 +1,34 @@
+
+Prerequisite: Feed the +12 V supply only with +5V! (typically from the UM232 board
+
+UBlox NL-650ERS Modul:
+Pin 5 close to the edge.
+Pin 1: +5V
+Pin 2: GND
+Pin 3: Shield
+Pin 4: RS232 TXD
+Pin 5: RS232 TXD
+
+DSub RS-232 Female:
+Pin2 TXD
+Pin3 RXD
+Pin5 GND
+
+Ublox - Serial converter board:
+Pin1 - +12V pin
+Pin2 - GND Pin
+Pin4 - DSub Sock 3
+Pin5 - DSub Sock 2
+
+UM232:
+AD0: TXD
+AD1: RXD
+
+IMU Board
+RX: To TX line (LVDS sends)
+TX: To RX line (LVDS receives)
+
+UM232 - IMU Board
+AD0 - TX
+AD1 - RX
+
